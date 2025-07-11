@@ -1,0 +1,12 @@
+---
+// src/components/HeroImage.astro
+interface Props {
+  src: string;
+  alt: string;
+  className?: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<img src={src} alt={alt} />
