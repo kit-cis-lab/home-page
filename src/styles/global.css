@@ -23,6 +23,7 @@ h1 {
 }
 
 /* ナビゲーションのスタイル */
+
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -36,7 +37,6 @@ h1 {
   background-color: #ff9776;
 }
 
-/* ナビゲーションのスタイル */
 
 .nav-links {
   width: 100%;
