@@ -6,7 +6,7 @@ interface Props {
   className?: string;
 }
 
-const { src, alt, className } = Astro.props;
+const { src, alt } = Astro.props;
 ---
 
-<img src={src} alt={alt} class:list={["responsive-image", className]} />
+<img src={src} alt={alt} />
