@@ -3,11 +3,15 @@ import { Icon } from "astro-icon/components";
 import clsx from "clsx";
 
 const navLinks = [
-  { href: "/", label: "TOP" },
-  { href: "/work", label: "研究内容" },
-  { href: "/case", label: "研究事例" },
-  { href: "/assign", label: "配属希望者へ" },
-  { href: "/inquiry", label: "問い合わせ" },
+  { href: "/", label: "TOP", icon: "material-symbols:home" },
+  { href: "/work", label: "研究内容", icon: "material-symbols:ink-pen" },
+  { href: "/case", label: "研究事例", icon: "material-symbols:experiment" },
+  {
+    href: "/assign",
+    label: "配属希望者へ",
+    icon: "material-symbols:person-raised-hand",
+  },
+  { href: "/inquiry", label: "問い合わせ", icon: "material-symbols:mail" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -30,12 +34,13 @@ const currentPath = Astro.url.pathname;
         <a
           href={link.href}
           class={clsx(
-            "text-base font-semibold w-full text-left px-4 py-2 rounded-lg transition",
+            "text-base font-semibold w-full text-left px-4 py-2 rounded-lg transition flex items-center gap-2",
             currentPath === link.href
               ? "bg-blue-600 text-white"
               : "text-gray-800 hover:bg-blue-100 hover:text-blue-700",
           )}
         >
+          <Icon name={link.icon} class="text-2xl" />
           {link.label}
         </a>
       ))
@@ -44,17 +49,18 @@ const currentPath = Astro.url.pathname;
 </div>
 
 <div
-  class="hidden md:flex md:space-x-8 md:items-center md:bg-blue-700 md:px-4 md:py-1"
+  class="hidden md:flex md:space-x-3 md:items-center md:bg-blue-700 md:px-4 md:py-1"
 >
   {
     navLinks.map((link) => (
       <a
         href={link.href}
         class={clsx(
-          "font-bold text-white hover:bg-white hover:text-blue-700 rounded px-4 py-1 transition",
+          "font-bold text-white hover:bg-white hover:text-blue-700 rounded px-3 py-1 transition flex items-center gap-1",
           currentPath === link.href && "text-2xl underline",
         )}
       >
+        <Icon name={link.icon} class="text-2xl" />
         {link.label}
       </a>
     ))
