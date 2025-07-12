@@ -1,11 +1,62 @@
 ---
 import { Icon } from "astro-icon/components";
+import clsx from "clsx";
+
+const navLinks = [
+  { href: "/", label: "TOP" },
+  { href: "/work", label: "研究内容" },
+  { href: "/case", label: "研究事例" },
+  { href: "/assign", label: "配属希望者へ" },
+  { href: "/inquiry", label: "問い合わせ" },
+];
+
+const currentPath = Astro.url.pathname;
 ---
 
-<div class="nav-links">
-  <a href="/">TOP</a>
-  <a href="/work">研究内容</a>
-  <a href="/case">研究事例</a>
-  <a href="/assign">配属希望者へ</a>
-  <a href="/inquiry">問い合わせ</a>
+<div id="overlay" class="hidden md:hidden fixed inset-0 bg-black/50 z-40"></div>
+
+<div
+  id="drawer"
+  class="hidden md:hidden fixed top-0 right-0 h-full w-2/3 max-w-xs bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col p-4"
+>
+  <Icon
+    id="drawerCloseButton"
+    name="material-symbols:close"
+    class="text-2xl self-end"
+  />
+  <div class="w-full flex flex-col items-start gap-2 mt-8">
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class={clsx(
+            "text-base font-semibold w-full text-left px-4 py-2 rounded-lg transition",
+            currentPath === link.href
+              ? "bg-blue-600 text-white"
+              : "text-gray-800 hover:bg-blue-100 hover:text-blue-700",
+          )}
+        >
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<div
+  class="hidden md:flex md:space-x-8 md:items-center md:bg-blue-700 md:px-4 md:py-1"
+>
+  {
+    navLinks.map((link) => (
+      <a
+        href={link.href}
+        class={clsx(
+          "font-bold text-white hover:bg-white hover:text-blue-700 rounded px-4 py-1 transition",
+          currentPath === link.href && "text-2xl underline",
+        )}
+      >
+        {link.label}
+      </a>
+    ))
+  }
 </div>
