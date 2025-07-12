@@ -10,12 +10,12 @@ function openNavigationDrawer() {
 
   // アニメーションで要素を表示する
   overlay.classList.remove('opacity-0');
-  drawer.classList.remove('translate-x-full');
+  drawer.classList.remove('-translate-x-full');
 }
 
 function closeNavigationDrawer() {
   // アニメーションで要素を非表示にする
-  drawer.classList.add('translate-x-full');
+  drawer.classList.add('-translate-x-full');
   overlay.classList.add('opacity-0');
 
   // アニメーションが終わったら要素を非表示にする
