@@ -1,11 +1,30 @@
 ---
-import { Icon } from "astro-icon/components";
+import NavigationBar from "./NavigationBar.astro";
+import NavigationDrawer from "./NavigationDrawer.astro";
+
+export interface NavLink {
+  href: string;
+  label: string;
+  icon: string;
+}
+
+const navLinks = [
+  { href: "/", label: "TOP", icon: "material-symbols:home" },
+  { href: "/work", label: "研究内容", icon: "material-symbols:ink-pen" },
+  { href: "/case", label: "研究事例", icon: "material-symbols:experiment" },
+  {
+    href: "/assign",
+    label: "配属希望者へ",
+    icon: "material-symbols:person-raised-hand",
+  },
+  { href: "/inquiry", label: "問い合わせ", icon: "material-symbols:mail" },
+];
 ---
 
-<div class="nav-links">
-  <a href="/">TOP</a>
-  <a href="/work">研究内容</a>
-  <a href="/case">研究事例</a>
-  <a href="/assign">配属希望者へ</a>
-  <a href="/inquiry">問い合わせ</a>
+<div
+  id="nav-overlay"
+  class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"
+>
 </div>
+<NavigationDrawer navLinks={navLinks} />
+<NavigationBar navLinks={navLinks} />
