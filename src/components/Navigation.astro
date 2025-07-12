@@ -1,6 +1,12 @@
 ---
-import { Icon } from "astro-icon/components";
-import clsx from "clsx";
+import NavigationBar from "./NavigationBar.astro";
+import NavigationDrawer from "./NavigationDrawer.astro";
+
+export interface NavLink {
+  href: string;
+  label: string;
+  icon: string;
+}
 
 const navLinks = [
   { href: "/", label: "TOP", icon: "material-symbols:home" },
@@ -13,56 +19,12 @@ const navLinks = [
   },
   { href: "/inquiry", label: "問い合わせ", icon: "material-symbols:mail" },
 ];
-
-const currentPath = Astro.url.pathname;
 ---
 
-<div id="overlay" class="hidden md:hidden fixed inset-0 bg-black/50 z-40"></div>
-
 <div
-  id="drawer"
-  class="hidden md:hidden fixed top-0 right-0 h-full w-2/3 max-w-xs bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col p-4"
+  id="nav-overlay"
+  class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"
 >
-  <Icon
-    id="drawerCloseButton"
-    name="material-symbols:close"
-    class="text-2xl self-end"
-  />
-  <div class="w-full flex flex-col items-start gap-2 mt-8">
-    {
-      navLinks.map((link) => (
-        <a
-          href={link.href}
-          class={clsx(
-            "text-base font-semibold w-full text-left px-4 py-2 rounded-lg transition flex items-center gap-2",
-            currentPath === link.href
-              ? "bg-blue-600 text-white"
-              : "text-gray-800 hover:bg-blue-100 hover:text-blue-700",
-          )}
-        >
-          <Icon name={link.icon} class="text-2xl" />
-          {link.label}
-        </a>
-      ))
-    }
-  </div>
 </div>
-
-<div
-  class="hidden md:flex md:space-x-3 md:items-center md:bg-blue-700 md:px-4 md:py-1"
->
-  {
-    navLinks.map((link) => (
-      <a
-        href={link.href}
-        class={clsx(
-          "font-bold text-white hover:bg-white hover:text-blue-700 rounded px-3 py-1 transition flex items-center gap-1",
-          currentPath === link.href && "text-2xl underline",
-        )}
-      >
-        <Icon name={link.icon} class="text-2xl" />
-        {link.label}
-      </a>
-    ))
-  }
-</div>
+<NavigationDrawer navLinks={navLinks} />
+<NavigationBar navLinks={navLinks} />
