@@ -1,0 +1,11 @@
+---
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props;
+---
+
+<div class="h-[3.0rem]">
+  <h1 class="font-bold text-white text-2xl py-2">{pageTitle}</h1>
+</div>
