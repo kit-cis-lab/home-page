@@ -17,14 +17,10 @@ const navLinks = [
     label: "配属希望者へ",
     icon: "material-symbols:person-raised-hand",
   },
-  { href: "/inquiry", label: "問い合わせ", icon: "material-symbols:mail" },
+  { href: "/inquiry", label: "研究の問合せ", icon: "material-symbols:mail" },
 ];
 ---
 
-<div
-  id="nav-overlay"
-  class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"
->
-</div>
+<div id="nav-overlay" class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"></div>
 <NavigationDrawer navLinks={navLinks} />
 <NavigationBar navLinks={navLinks} />
