@@ -2,12 +2,18 @@
 import HeroImage from "../components/HeroImage.astro";
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
+
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props;
 ---
 
 <header class="mb-5">
   <nav class="flex flex-col gap-4">
     <Hamburger />
     <HeroImage />
-    <Navigation />
+    <Navigation pageTitle={pageTitle} />
   </nav>
 </header>
