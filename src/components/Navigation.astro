@@ -2,11 +2,17 @@
 import NavigationBar from "./NavigationBar.astro";
 import NavigationDrawer from "./NavigationDrawer.astro";
 
+interface Props {
+  pageTitle: string;
+}
+
 export interface NavLink {
   href: string;
   label: string;
   icon: string;
 }
+
+const { pageTitle } = Astro.props;
 
 const navLinks = [
   { href: "/", label: "TOP", icon: "material-symbols:home" },
@@ -21,10 +27,6 @@ const navLinks = [
 ];
 ---
 
-<div
-  id="nav-overlay"
-  class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"
->
-</div>
+<div id="nav-overlay" class="invisible opacity-0 fixed inset-0 bg-black/50 z-40"></div>
 <NavigationDrawer navLinks={navLinks} />
-<NavigationBar navLinks={navLinks} />
+<NavigationBar navLinks={navLinks} pageTitle={pageTitle} />

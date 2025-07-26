@@ -1,32 +1,22 @@
 ---
-import { Icon } from "astro-icon/components";
-import clsx from "clsx";
 import type { NavLink } from "./Navigation.astro";
+import PageLinksBar from "./PageLinksBar.astro";
+import PageTitleBar from "./PageTitleBar.astro";
 
 interface Props {
   navLinks: NavLink[];
+  pageTitle: string;
 }
 
-const { navLinks }: Props = Astro.props;
-
-const currentPath = Astro.url.pathname;
+const { navLinks, pageTitle } = Astro.props;
 ---
 
-<div
-  class="hidden md:flex md:space-x-3 md:items-center md:bg-blue-700 md:px-4 md:py-1"
->
-  {
-    navLinks.map((link) => (
-      <a
-        href={link.href}
-        class={clsx(
-          "font-bold text-white hover:bg-white hover:text-blue-700 rounded px-3 py-1 transition flex items-center gap-1",
-          currentPath === link.href && "text-2xl underline",
-        )}
-      >
-        <Icon name={link.icon} class="text-2xl" />
-        {link.label}
-      </a>
-    ))
-  }
+<div class="bg-blue-700 px-4">
+  <div class="hidden md:block">
+    <PageLinksBar navLinks={navLinks} />
+  </div>
+
+  <div class="md:hidden">
+    <PageTitleBar pageTitle={pageTitle} />
+  </div>
 </div>
