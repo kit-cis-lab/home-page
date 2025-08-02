@@ -1,9 +1,57 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+// 他の必要なコンポーネントをインポート
+import HeroImage from "../components/HeroImage.astro";
 
-const pageTitle = "TOP";
+// 1. 全てのニュースを取得
+const allNews = await getCollection("news");
+// 2. 最新5件だけを取得（件数はslice(0, 5)の数字で調整可能）
+const latestNews = allNews
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 5);
+
+// 3. 本文をレンダリング
+const renderedItems = await Promise.all(
+  latestNews.map(async (item) => {
+    const { Content } = await item.render();
+    return { ...item, RenderedContent: Content };
+  }),
+);
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>ここにページの内容が入る</h2>
+<BaseLayout pageTitle="トップページ">
+  <!-- 最新ニュースセクション -->
+  <div class="w-full max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold border-b-2 border-gray-300 pb-2 mb-6">News</h2>
+
+    <ul class="space-y-4">
+      {
+        renderedItems.map((item) => (
+          <li class="flex flex-col sm:flex-row items-start border-b border-gray-200 py-4">
+            <p class="w-full sm:w-36 shrink-0 text-gray-600 mb-1 sm:mb-0">
+              {item.data.date.toLocaleDateString("ja-JP", {
+                year: "numeric",
+                month: "numeric",
+                day: "numeric",
+              })}
+            </p>
+            <div class="text-gray-800 prose-a:text-blue-600">
+              <item.RenderedContent />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- 「もっとみる」リンク -->
+    <div class="text-center mt-8">
+      <a
+        href="/news/1"
+        class="inline-block px-8 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors text-lg"
+      >
+        もっとみる
+      </a>
+    </div>
+  </div>
 </BaseLayout>
