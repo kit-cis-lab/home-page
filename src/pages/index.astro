@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsList from "./news/components/NewsList.astro";
 
 const allNews = await getCollection("news");
 
@@ -17,28 +18,7 @@ const latestNews = allNews
       NEWS
     </h1>
 
-    <ul>
-      {
-        latestNews.map(async (item) => {
-          const { Content } = await item.render();
-
-          const localeDate = item.data.date.toLocaleDateString("ja-JP", {
-            year: "numeric",
-            month: "numeric",
-            day: "numeric",
-          });
-
-          return (
-            <li class="border-b py-2 flex flex-col sm:flex-row sm:items-center">
-              <p class="mb-2 sm:mb-0 sm:w-30 sm:shrink-0 text-lg tabular-nums">{localeDate}</p>
-              <div class="sm:flex-1 prose-a:text-blue-700 prose-a:underline prose-a:hover:text-blue-500">
-                <Content />
-              </div>
-            </li>
-          );
-        })
-      }
-    </ul>
+    <NewsList news={latestNews} />
 
     <div class="text-center mt-8">
       <a
