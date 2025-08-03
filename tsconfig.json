@@ -6,6 +6,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    // null と undefined を他の型へ代入できなくする
+    "strictNullChecks": true,
+    // JavaScript ファイルを扱えるようにする
+    "allowJs": true
   }
 }
