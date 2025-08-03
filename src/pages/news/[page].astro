@@ -1,56 +1,29 @@
 ---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { GetStaticPathsOptions } from "astro";
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Pagination from "../../components/Pagination.astro"; // 次のステップで作成します
+import NewsList from "./components/NewsList.astro";
+import Pagination from "./components/Pagination.astro";
 
-// Astroにページ生成を指示する特別な関数
-export async function getStaticPaths({ paginate }) {
-  // 1. 全てのニュース記事を取得
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const allNews = await getCollection("news");
-  // 2. 日付の新しい順に並び替え
-  const sortedNews = allNews.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-  // 3. 1ページあたり10件でページ分割するようAstroに指示
-  // これにより /news/, /news/2, /news/3 ... というページが自動生成されます
-  return paginate(sortedNews, { pageSize: 10 });
+  const sortedNews = allNews.sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+  });
+
+  return paginate(sortedNews, { pageSize: 15 });
 }
 
-// paginateから渡された現在のページ情報を受け取る
 const { page } = Astro.props;
-
-// Markdown本文をHTMLに変換する準備
-const renderedItems = await Promise.all(
-  page.data.map(async (item) => {
-    const { Content } = await item.render();
-    return { ...item, RenderedContent: Content };
-  }),
-);
 ---
 
 <BaseLayout pageTitle="ニュース一覧">
-  <div class="w-full max-w-4xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold border-b-2 border-gray-300 pb-3 mb-8">ニュース</h1>
-
-    <ul class="space-y-4">
-      {
-        renderedItems.map((item) => (
-          <li class="flex flex-col sm:flex-row items-start border-b border-gray-200 py-4">
-            <p class="w-full sm:w-36 shrink-0 text-gray-600 mb-1 sm:mb-0">
-              {item.data.date.toLocaleDateString("ja-JP", {
-                year: "numeric",
-                month: "numeric",
-                day: "numeric",
-              })}
-            </p>
-            <div class="text-gray-800 prose-a:text-blue-600">
-              <item.RenderedContent />
-            </div>
-          </li>
-        ))
-      }
-    </ul>
-
-    <!-- ページネーションコンポーネントを配置 -->
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+      NEWS
+    </h1>
+    <NewsList news={page.data} />
     <Pagination page={page} />
   </div>
 </BaseLayout>

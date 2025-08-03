@@ -1,0 +1,66 @@
+---
+import type { Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  page: Page<CollectionEntry<"news">>;
+}
+
+const { page } = Astro.props;
+---
+
+<nav class="flex justify-center items-center space-x-2 mt-5">
+  {
+    page.url.first && page.currentPage > 1 && (
+      <a
+        href={page.url.first}
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        title="最初のページへ"
+      >
+        &lt;&lt;
+      </a>
+    )
+  }
+
+  {
+    page.url.prev && (
+      <a
+        href={page.url.prev}
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        title="前のページへ"
+      >
+        {page.currentPage - 1}
+      </a>
+    )
+  }
+
+  <div
+    class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white"
+  >
+    {page.currentPage}
+  </div>
+
+  {
+    page.url.next && (
+      <a
+        href={page.url.next}
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        title="次のページへ"
+      >
+        {page.currentPage + 1}
+      </a>
+    )
+  }
+
+  {
+    page.url.last && page.currentPage < page.lastPage && (
+      <a
+        href={page.url.last}
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        title="最後のページへ"
+      >
+        &gt;&gt;
+      </a>
+    )
+  }
+</nav>
