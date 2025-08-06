@@ -1,9 +1,32 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsList from "./news/components/NewsList.astro";
 
-const pageTitle = "TOP";
+const allNews = await getCollection("news");
+
+const latestNews = allNews
+  .sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+  })
+  .slice(0, 10);
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>ここにページの内容が入る</h2>
+<BaseLayout pageTitle="トップページ">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+      NEWS
+    </h1>
+
+    <NewsList news={latestNews} />
+
+    <div class="text-center mt-8">
+      <a
+        href="/news/1"
+        class="inline-block px-6 py-2 bg-gray-700 text-white rounded hover:bg-gray-500 transition-colors"
+      >
+        もっとみる
+      </a>
+    </div>
+  </div>
 </BaseLayout>

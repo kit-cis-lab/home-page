@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  news: CollectionEntry<"news">[];
+}
+
+const { news } = Astro.props;
+---
+
+<ul>
+  {
+    news.map(async (newsEntry) => {
+      const { Content } = await newsEntry.render();
+
+      const localeDate = newsEntry.data.date.toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+      });
+
+      return (
+        <li class="border-b py-2 flex flex-col sm:flex-row sm:items-center">
+          <p class="mb-2 sm:mb-0 sm:w-30 sm:shrink-0 text-lg tabular-nums">{localeDate}</p>
+          <div class="sm:flex-1 prose-a:text-blue-700 prose-a:underline prose-a:hover:text-blue-500">
+            <Content />
+          </div>
+        </li>
+      );
+    })
+  }
+</ul>
