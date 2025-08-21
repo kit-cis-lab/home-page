@@ -12,7 +12,11 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{pageTitle} | 情報知能システム研究室</title>
+    <meta
+      name="description"
+      content="京都工芸繊維大学 情報工学 情報知能システム研究室のウェブサイトです。知能システム、特に人工知能の最先端である「計算知能」と「機械学習」を研究しています。"
+    />
   </head>
   <body class="bg-gray-50 px-4 flex flex-col">
     <Header pageTitle={pageTitle} />
@@ -21,5 +25,7 @@ const { pageTitle } = Astro.props;
     <script>
       import "../scripts/menu.js";
     </script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
+    ></script>
   </body>
 </html>
