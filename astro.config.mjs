@@ -1,6 +1,7 @@
 // @ts-check
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import rehypeExternalLinks from "rehype-external-links";
 
 import icon from "astro-icon";
 
@@ -16,4 +17,15 @@ export default defineConfig({
   },
 
   integrations: [icon()],
+  markdown: {
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: "_blank",
+          rel: ["noopener", "noreferrer"],
+        },
+      ],
+    ],
+  },
 });
