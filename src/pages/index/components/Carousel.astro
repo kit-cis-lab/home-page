@@ -10,11 +10,11 @@ const slideImages = [
 
 <div
   id="default-carousel"
-  class="relative w-full max-w-3xl mx-auto mt-10"
+  class="relative w-full max-w-3xl mx-auto"
   data-carousel="slide"
-  data-carousel-interval="5000"
+  data-carousel-interval="10000"
 >
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mb-8">
+  <div class="relative overflow-hidden rounded-lg aspect-video mb-8">
     {
       slideImages.map((image, index) => (
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
