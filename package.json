@@ -17,6 +17,7 @@
     "astro-icon": "^1.1.5",
     "clsx": "^2.1.1",
     "flowbite": "^3.1.2",
+    "rehype-external-links": "^3.0.0",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
