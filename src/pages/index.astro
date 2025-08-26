@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Carousel from "./index/components/Carousel.astro";
+import LabPhotoCarousel from "./index/components/LabPhotoCarousel.astro";
 import NewsList from "./news/components/NewsList.astro";
 
 const allNews = await getCollection("news");
@@ -28,7 +28,7 @@ const latestNews = allNews
       研究室の様子
     </h1>
 
-    <Carousel />
+    <LabPhotoCarousel />
 
     <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
       NEWS
