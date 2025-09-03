@@ -1,9 +1,9 @@
 ---
+import NewsList from "@/components/NewsList.astro";
+import Pagination from "@/components/Pagination.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { GetStaticPathsOptions } from "astro";
 import { getCollection } from "astro:content";
-import NewsList from "./components/NewsList.astro";
-import Pagination from "./components/Pagination.astro";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const allNews = await getCollection("news");
