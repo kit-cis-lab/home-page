@@ -1,8 +1,8 @@
 ---
+import NewsList from "@/components/NewsList.astro";
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LabPhotoCarousel from "./index/components/LabPhotoCarousel.astro";
-import NewsList from "./news/components/NewsList.astro";
 
 const allNews = await getCollection("news");
 
