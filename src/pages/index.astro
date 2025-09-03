@@ -1,8 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import LabPhotoCarousel from "./index/components/LabPhotoCarousel.astro";
 import NewsList from "./news/components/NewsList.astro";
-import Carousel from "./index/components/Carousel.astro";
+
 const allNews = await getCollection("news");
 
 const latestNews = allNews
@@ -13,13 +14,21 @@ const latestNews = allNews
 ---
 
 <BaseLayout pageTitle="トップページ">
-  <div class="container mx-auto px-4">
+  <div class="max-w-5xl mx-auto px-4">
     <p class="mb-5 sm:text-lg">
-      京都工芸繊維大学 情報工学 情報知能システム研究室のウェブサイトです。<br />
-      知能システム、特に人工知能の最先端である「計算知能」と「機械学習」を研究しています。
+      京都工芸繊維大学 情報知能システム研究室のウェブサイトです。<br />
+      知能システム、特に人工知能の最先端である
+      <span class="font-bold text-blue-700"> 計算知能 </span>
+      と
+      <span class="font-bold text-blue-700"> 機械学習 </span>
+      を研究しています。
     </p>
 
-    <Carousel />
+    <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-6">
+      研究室の様子
+    </h1>
+
+    <LabPhotoCarousel />
 
     <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
       NEWS
