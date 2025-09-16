@@ -1,0 +1,91 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const pageTitle = "研究内容";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="w-full max-w-[60rem] mx-auto px-4">
+    <p class="mb-8 sm:text-lg">
+      計算知能最適化、機械学習、機械学習に関連した最適化、群ロボット、実問題への応用、などに関する研究を行っています。
+    </p>
+
+    <section class="mb-12">
+      <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+        計算知能最適化
+      </h1>
+      <div class="flex flex-col md:flex-row md:justify-between mt-4">
+        <div class="w-full md:flex-1 md:min-w-0">
+          <p class="mx-5 md:mx-0">
+            最適化は様々な分野で用いられる重要なツールですが、従来の方法にはいくつかの欠点があります。これらの欠点を解消するために、近年は知能を活かした最適化法が注目を集めています。これらの最適化法として例えば、生物の進化に基づいた遺伝的アルゴリズム(GA)や群れの知能に基づいた粒子群最適化法(PSO)などがあります。このような計算知能最適化法に基づいて、さらに優れた最適化を行う方法を研究しています。
+          </p>
+        </div>
+        <div class="w-full md:w-80 md:ml-8 mt-4 md:mt-0 shrink-0">
+          <img
+            src="/images/work/GA.jpg"
+            alt="計算知能最適化のイメージ"
+            class="rounded-lg shadow-md w-80 h-auto mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+        機械学習
+      </h1>
+      <div class="flex flex-col md:flex-row md:justify-between mt-4">
+        <div class="w-full md:flex-1 md:min-w-0">
+          <p class="mx-5 md:mx-0">
+            既知のデータに基づいて未知のパターンを認識したり、経験したデータに基づいて最適な行動を決定したりするための方法論で、強化学習、ニューラルネットワーク、サポートベクターマシーンといった学習法が用いられます。特に近年は深層学習（ディープラーニング）を導入して次々と大きな成果があげられています。このような学習法に基づいて、さらに優れた学習をする方法を研究しています。また、これらの学習法を用いた人工知能ゲームプレイヤーの設計法も研究しています。
+          </p>
+        </div>
+        <div class="w-full md:w-80 md:ml-8 mt-4 md:mt-0 shrink-0">
+          <img
+            src="/images/work/GF.jpg"
+            alt="機械学習のイメージ"
+            class="rounded-lg shadow-md w-80 h-auto mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+        機械学習に関連した最適化
+      </h1>
+      <p class="mx-5 md:mx-0 mt-4">
+        機械学習においても最適化が用いられています。そこで、学習をより最適に実行するための最適化法を研究しています。また、強化学習の最適学習能力を活かして、強化学習に基づく最適化法の開発を進めています。
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+        群ロボット
+      </h1>
+      <div class="flex flex-col md:flex-row md:justify-between mt-4">
+        <div class="w-full md:flex-1 md:min-w-0">
+          <p class="mx-5 md:mx-0">
+            複数台の（安価な）ロボットは１台の高価なロボットより高性能なシステムを実現できる可能性を秘めています。このような群ロボットシステムを、計算知能最適化や強化学習を用いて設計する研究を行っています。
+          </p>
+        </div>
+        <div class="w-64 md:w-72 md:ml-8 mt-4 md:mt-0 shrink-0 mx-auto">
+          <img
+            src="/images/work/formation.gif"
+            alt="群ロボットのイメージ"
+            class="rounded-lg shadow-md w-80 h-auto mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h1 class="font-semibold text-xl pl-2 border-b-2 border-l-8 border-solid border-black mb-3">
+        実問題への応用
+      </h1>
+      <p class="mx-5 md:mx-0 mt-4">
+        企業が実際に直面する問題は非常に大規模かつ複雑です。このような問題を、最適化や機械学習を用いることによって解決する方法を研究しています。
+      </p>
+    </section>
+  </div>
+</BaseLayout>
