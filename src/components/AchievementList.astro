@@ -2,18 +2,18 @@
 import { type CollectionEntry } from "astro:content";
 
 interface Props {
-  cases: CollectionEntry<"achievements">[];
+  achievements: CollectionEntry<"achievements">[];
 }
 
-const { cases } = Astro.props;
+const { achievements } = Astro.props;
 ---
 
 <ul class="border-y-1 border-gray-200 divide-y divide-gray-200 w-full">
   {
-    cases.map(async (caseEntry) => {
-      const { title, tags, authors, year, publisher, link } = caseEntry.data;
+    achievements.map((achievementEntry) => {
+      const { title, tags, authors, year, publisher, link } = achievementEntry.data;
       return (
-        <div class="flex flex-col py-4 gap-4 w-full">
+        <li class="flex flex-col py-4 gap-4 w-full">
           <b>{title}</b>
           <div class="flex flex-wrap gap-3">
             {tags.map((tag) => (
@@ -27,9 +27,9 @@ const { cases } = Astro.props;
                 <span class="mr-3">{author}</span>
               ))}
             </li>
-            <li>発表​年​度 : {year}</li>
+            <li>発表年度 : {year}</li>
             <li>
-              雑​誌​名​・会​議​名​ :{" "}
+              雑誌名・会議名 :{" "}
               {link ? (
                 <a
                   href={link}
@@ -44,7 +44,7 @@ const { cases } = Astro.props;
               )}
             </li>
           </div>
-        </div>
+        </li>
       );
     })
   }
