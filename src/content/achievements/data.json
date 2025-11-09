@@ -1,7 +1,9 @@
 {
   "achievement-001": {
     "title": "Memory Switching L-SHADE Based on Efficient Non-convex Ratio",
-    "tags": [],
+    "tags": [
+      "進化計算"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -12,8 +14,10 @@
     "date": "2025-09-12"
   },
   "achievement-002": {
-    "title": "",
-    "tags": [],
+    "title": "Generation of Game Levels Using a GPT",
+    "tags": [
+      "大規模言語モデル"
+    ],
     "authors": [
       "甘中雄斗",
       "飯間等",
@@ -25,8 +29,10 @@
     "date": "2025-09-12"
   },
   "achievement-003": {
-    "title": "",
-    "tags": [],
+    "title": "メタヒューリスティクスを適応的に割り当てる最適化法",
+    "tags": [
+      "最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -38,7 +44,15 @@
   },
   "achievement-004": {
     "title": "Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones",
-    "tags": [],
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "ドローン",
+      "ドローン配送",
+      "配送",
+      "受取",
+      "ジャーナル論文"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等",
@@ -50,10 +64,12 @@
     "date": "2025-08-20"
   },
   "achievement-005": {
-    "title": "",
-    "tags": [],
+    "title": "背景音楽生成のための機械学習による漫画の感情分析",
+    "tags": [
+      "機械学習"
+    ],
     "authors": [
-      "北尾",
+      "北尾春樹",
       "飯間等"
     ],
     "year": "2025",
@@ -62,10 +78,13 @@
     "date": "2025-05-27"
   },
   "achievement-006": {
-    "title": "",
-    "tags": [],
+    "title": "Foreign Exchange Rate Forecast by a Large Language Model Integrated with Trend Description",
+    "tags": [
+      "大規模言語モデル",
+      "時系列予測"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2025",
@@ -75,7 +94,9 @@
   },
   "achievement-007": {
     "title": "GPTを用いたゲームレベルの生成",
-    "tags": [],
+    "tags": [
+      "大規模言語モデル"
+    ],
     "authors": [
       "吉貞心",
       "飯間等"
@@ -87,7 +108,10 @@
   },
   "achievement-008": {
     "title": "時系列予測に対する大規模言語モデルの全ブロック出力の統合",
-    "tags": [],
+    "tags": [
+      "時系列予測",
+      "大規模言語モデル"
+    ],
     "authors": [
       "大道拓真",
       "飯間等"
@@ -98,8 +122,10 @@
     "date": "2025-03-13"
   },
   "achievement-009": {
-    "title": "",
-    "tags": [],
+    "title": "非凸度によりメモリを切り替えるL-SHADE",
+    "tags": [
+      "進化計算"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -110,10 +136,12 @@
     "date": "2025-03-04"
   },
   "achievement-010": {
-    "title": "",
-    "tags": [],
+    "title": "Predicting FX market movements using GAN with limit order event data",
+    "tags": [
+      "研究"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -125,7 +153,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2024",
@@ -137,7 +165,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -161,7 +189,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -221,7 +249,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -257,7 +285,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -281,7 +309,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -317,7 +345,7 @@
     "title": "",
     "tags": [],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2023",
