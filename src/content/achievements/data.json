@@ -1,0 +1,892 @@
+{
+  "achievement-001": {
+    "title": "Memory Switching L-SHADE Based on Efficient Non-convex Ratio",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "SICE Festival 2025 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2025/",
+    "date": "2025-09-12"
+  },
+  "achievement-002": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "甘中雄斗",
+      "飯間等",
+      "吉貞心"
+    ],
+    "year": "2025",
+    "publisher": "SICE Festival 2025 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2025/",
+    "date": "2025-09-12"
+  },
+  "achievement-003": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "電気学会電子・情報・システム部門大会",
+    "link": "https://www.iee.jp/eiss/event/conf2025/",
+    "date": "2025-08-27"
+  },
+  "achievement-004": {
+    "title": "Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等",
+      "軽野義行"
+    ],
+    "year": "2025",
+    "publisher": "IEEE Access",
+    "link": "https://ieeexplore.ieee.org/document/11122443",
+    "date": "2025-08-20"
+  },
+  "achievement-005": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "北尾",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "第69回システム制御情報学会研究発表講演会",
+    "link": "https://sci25.iscie.or.jp/",
+    "date": "2025-05-27"
+  },
+  "achievement-006": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "彭",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "https://www.ismsi.org/",
+    "date": "2025-04-27"
+  },
+  "achievement-007": {
+    "title": "GPTを用いたゲームレベルの生成",
+    "tags": [],
+    "authors": [
+      "吉貞心",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "情報処理学会第87回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/87/",
+    "date": "2025-03-13"
+  },
+  "achievement-008": {
+    "title": "時系列予測に対する大規模言語モデルの全ブロック出力の統合",
+    "tags": [],
+    "authors": [
+      "大道拓真",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "情報処理学会第87回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/87/",
+    "date": "2025-03-13"
+  },
+  "achievement-009": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "第27回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium202503.html",
+    "date": "2025-03-04"
+  },
+  "achievement-010": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "彭",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "Finance Research Letters",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1544612324015563?CMX_ID=&SIS_ID=&dgcid=STMJ_219742_AUTH_SERV_PA&utm_acid=142901937&utm_campaign=STMJ_219742_AUTH_SERV_PA&utm_in=DM528767&utm_medium=email&utm_source=AC_",
+    "date": "2024-12-06"
+  },
+  "achievement-011": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "田中",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Neural Information Processing",
+    "link": "https://iconip2024.org/",
+    "date": "2024-12-04"
+  },
+  "achievement-012": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "彭",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Soft Computing and Machine Intelligence",
+    "link": "https://www.iscmi.us/",
+    "date": "2024-11-23"
+  },
+  "achievement-013": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "寺村",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2024",
+    "link": "https://www.sice.or.jp/org/SSI2024/",
+    "date": "2024-11-13"
+  },
+  "achievement-014": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "彭",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "SICE Festival 2024 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2024/",
+    "date": "2024-08-30"
+  },
+  "achievement-015": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "岩崎",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "第68回システム制御情報学会研究発表講演会",
+    "link": "https://sci24.iscie.or.jp/",
+    "date": "2024-05-25"
+  },
+  "achievement-016": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "木村",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "第68回システム制御情報学会研究発表講演会",
+    "link": "https://sci24.iscie.or.jp/",
+    "date": "2024-05-25"
+  },
+  "achievement-017": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "吉貞心",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "情報処理学会第86回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/86/",
+    "date": "2024-03-17"
+  },
+  "achievement-018": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "Jha",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Agents and Artificial Intelligence",
+    "link": "https://icaart.scitevents.org/?y=2024",
+    "date": "2024-02-25"
+  },
+  "achievement-019": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "田中",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "International Conference on Machine Learning and Applications",
+    "link": "https://www.icmla-conference.org/icmla23/",
+    "date": "2023-12-15"
+  },
+  "achievement-020": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中野",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "電気学会システム/制御合同研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW00008BB6",
+    "date": "2023-12-03"
+  },
+  "achievement-021": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中村",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-022": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "田中",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-023": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "高浦",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-024": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "田中",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第37回人工知能学会全国大会",
+    "link": "https://www.ai-gakkai.or.jp/jsai2023/",
+    "date": "2023-06-07"
+  },
+  "achievement-025": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中野",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-026": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "岩崎",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-027": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "彭",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-028": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2023/",
+    "date": "2023-03-17"
+  },
+  "achievement-029": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "室田",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第23回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium202301.html",
+    "date": "2023-03-06"
+  },
+  "achievement-030": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "安藤",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "情報処理学会第85回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/85/",
+    "date": "2023-03-02"
+  },
+  "achievement-031": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "勝田",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会システム研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW000081D3",
+    "date": "2022-11-26"
+  },
+  "achievement-032": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Conference on Engineering and Emerging Technologies",
+    "link": "https://iceet.net/program-2/",
+    "date": "2022-10-27"
+  },
+  "achievement-033": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "スケジューリング・シンポジウム",
+    "link": "http://www.scheduling.jp/symposium/2022/",
+    "date": "2022-09-16"
+  },
+  "achievement-034": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会電子・情報・システム部門大会",
+    "link": "https://www.iee.jp/eiss/event/conf2022/",
+    "date": "2022-08-31"
+  },
+  "achievement-035": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中村",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Congress on Advanced Applied Informatics",
+    "link": "https://iaiai.org/conference/aai2022/",
+    "date": "2022-07-05"
+  },
+  "achievement-036": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "室田",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/browse/ieejeiss/142/7/_contents/-char/ja",
+    "date": "2022-07-01"
+  },
+  "achievement-037": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "Soldo",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "第66回システム制御情報学会研究発表講演会",
+    "link": "https://sci22.iscie.or.jp/",
+    "date": "2022-05-20"
+  },
+  "achievement-038": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "勝田",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "第66回システム制御情報学会研究発表講演会",
+    "link": "https://sci22.iscie.or.jp/",
+    "date": "2022-05-20"
+  },
+  "achievement-039": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "http://www.ismsi.org/schedule.html",
+    "date": "2022-04-10"
+  },
+  "achievement-040": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/article/ieejeiss/142/4/142_499/_article/-char/ja",
+    "date": "2022-04-01"
+  },
+  "achievement-041": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "木",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "システム制御情報学会論文誌",
+    "link": "https://www.iscie.or.jp/pub/journal",
+    "date": "2022-03-22"
+  },
+  "achievement-042": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "伊藤",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "情報処理学会第84回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/84/",
+    "date": "2022-03-05"
+  },
+  "achievement-043": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "堀田",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "情報処理学会第84回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/84/",
+    "date": "2022-03-05"
+  },
+  "achievement-044": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "伊藤",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "Finance Research Letters",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1544612321004827",
+    "date": "2021-10-26"
+  },
+  "achievement-045": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "Journal of Advanced Mechanical Design, Systems, and Manufacturing",
+    "link": "https://www.jstage.jst.go.jp/article/jamdsm/15/6/15_2021jamdsm0069/_article/-char/en",
+    "date": "2021-10-15"
+  },
+  "achievement-046": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "インテリジェント・システム・シンポジウム",
+    "link": "https://sites.google.com/view/fan2021online",
+    "date": "2021-09-21"
+  },
+  "achievement-047": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "堀田",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2021/",
+    "date": "2021-03-11"
+  },
+  "achievement-048": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "室田",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2021/",
+    "date": "2021-03-11"
+  },
+  "achievement-049": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "電気学会研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW00006F35",
+    "date": "2020-12-12"
+  },
+  "achievement-050": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "矢口",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "IEEE Conference on Games",
+    "link": "https://ieee-cog.org/2020/",
+    "date": "2020-08-24"
+  },
+  "achievement-051": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "西阪",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/article/ieejeiss/140/7/140_820/_article/-char/ja",
+    "date": "2020-07-02"
+  },
+  "achievement-052": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "木",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "第64回システム制御情報学会研究発表講演会",
+    "link": "https://sci20.iscie.or.jp/",
+    "date": "2020-05-20"
+  },
+  "achievement-053": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "伊藤",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "情報処理学会第82回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/82/",
+    "date": "2020-03-06"
+  },
+  "achievement-054": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "横山",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "IEEE International Conference on Tools with Artificial Intelligence",
+    "link": "https://ictai2019.org/",
+    "date": "2019-11-06"
+  },
+  "achievement-055": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "西阪",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "IEEE International Conference on Tools with Artificial Intelligence",
+    "link": "https://ictai2019.org/",
+    "date": "2019-11-06"
+  },
+  "achievement-056": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "矢口",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "2019年電気学会電子・情報・システム部門大会",
+    "link": "http://denki.iee.jp/eiss/conf2019/",
+    "date": "2019-09-06"
+  },
+  "achievement-057": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "西阪",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "2019年電気学会電子・情報・システム部門大会",
+    "link": "http://denki.iee.jp/eiss/conf2019/",
+    "date": "2019-09-06"
+  },
+  "achievement-058": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "矢口",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第63回システム制御情報学会研究発表講演会",
+    "link": "http://sci19.iscie.or.jp/",
+    "date": "2019-05-23"
+  },
+  "achievement-059": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "横山",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第15回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201901.html",
+    "date": "2019-03-08"
+  },
+  "achievement-060": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "西阪",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第15回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201901.html",
+    "date": "2019-03-08"
+  },
+  "achievement-061": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "渡邊",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "IEEE International Conference on Systems, Man and Cybernetics",
+    "link": "http://www.smc2018.org/",
+    "date": "2018-10-10"
+  },
+  "achievement-062": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "渡邊",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "第62回システム制御情報学会研究発表講演会",
+    "link": "http://sci18.iscie.or.jp/",
+    "date": "2018-05-16"
+  },
+  "achievement-063": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "赤羽根",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "第45回知能システムシンポジウム",
+    "link": "http://www.sice.or.jp/org/i-sys/is45/",
+    "date": "2018-03-08"
+  },
+  "achievement-064": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "渡邊",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "The Sixth Asian Conference on Information Systems",
+    "link": "http://www.rupp.edu.kh/acis2017/",
+    "date": "2017-12-12"
+  },
+  "achievement-065": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "赤羽根",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "The Sixth Asian Conference on Information Systems",
+    "link": "http://www.rupp.edu.kh/acis2017/",
+    "date": "2017-12-12"
+  },
+  "achievement-066": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "大西",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "IEEE Conference on Computational Intelligence in Games",
+    "link": "http://www.cig2017.com/",
+    "date": "2017-08-22"
+  },
+  "achievement-067": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "大西",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第11回コンピューテーショナル・インテリジェンス研究会",
+    "link": "http://www.sice.or.jp/ci/11th_ci.html",
+    "date": "2017-06-27"
+  },
+  "achievement-068": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中島",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第61回システム制御情報学会研究発表講演会",
+    "link": "https://sci17.iscie.or.jp/",
+    "date": "2017-05-25"
+  },
+  "achievement-069": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "大西",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第61回システム制御情報学会研究発表講演会",
+    "link": "https://sci17.iscie.or.jp/",
+    "date": "2017-05-25"
+  },
+  "achievement-070": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中島",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "http://www.ismsi.org/ismsi2017.html",
+    "date": "2017-03-25"
+  },
+  "achievement-071": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "渡邊",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第44回知能システムシンポジウム",
+    "link": "http://www.ds.u-tokai.ac.jp/is44/",
+    "date": "2017-03-14"
+  },
+  "achievement-072": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "赤羽根",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第44回知能システムシンポジウム",
+    "link": "http://www.ds.u-tokai.ac.jp/is44/",
+    "date": "2017-03-14"
+  },
+  "achievement-073": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "川本",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第12回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201701.html",
+    "date": "2017-03-13"
+  },
+  "achievement-074": {
+    "title": "",
+    "tags": [],
+    "authors": [
+      "中島",
+      "飯間等"
+    ],
+    "year": "2016",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会",
+    "link": "http://www.sice.or.jp/org/SSI2016/index.php",
+    "date": "2016-12-06"
+  }
+}
