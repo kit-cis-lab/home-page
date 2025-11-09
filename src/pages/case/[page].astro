@@ -1,0 +1,26 @@
+---
+import CaseList from "@/components/CaseList.astro";
+import Pagination from "@/components/Pagination.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { GetStaticPathsOptions } from "astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allNews = await getCollection("news");
+
+  const sortedNews = allNews.sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+  });
+
+  return paginate(sortedNews, { pageSize: 20 });
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout pageTitle="研究実績">
+  <div class="max-w-5xl mx-auto px-4 py-8">
+    <CaseList cases={page.data} />
+    <Pagination page={page} />
+  </div>
+</BaseLayout>

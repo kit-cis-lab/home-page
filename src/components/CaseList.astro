@@ -1,0 +1,43 @@
+---
+import { type CollectionEntry } from "astro:content";
+
+interface Props {
+  cases: CollectionEntry<"news">[];
+}
+
+const { cases } = Astro.props;
+---
+
+<ul class="border-y-1 border-gray-200 divide-y divide-gray-200">
+  {
+    cases.map(async (caseEntry) => {
+      const { Content } = await caseEntry.render();
+
+      const localeDate = caseEntry.data.date.toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+      });
+
+      const tags = ["AI", "Genetic Algorithms", "最適化"];
+
+      return (
+        <div class="flex flex-col py-4 gap-3">
+          <b>Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones</b>
+          <div class="">
+            {tags.map((tag) => (
+              <span class="bg-sky-700 rounded-md px-3 py-1 text-sm text-white mr-2 mb-2">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div>
+            <li>著者 : {}</li>
+            <li>発表​年​度 : {}</li>
+            <li>雑​誌​名​・会​議​名​ : {}</li>
+          </div>
+        </div>
+      );
+    })
+  }
+</ul>
