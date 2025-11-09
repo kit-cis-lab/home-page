@@ -10,7 +10,7 @@ const newsCollection = defineCollection({
 
 const achievementsCollection = defineCollection({
   loader: file("src/content/achievements/data.json", {
-    parser: (text) => {
+    parser: (text: string) => {
       const obj = JSON.parse(text);
       return Object.fromEntries(
         Object.entries(obj).map(([key, value]) => {
