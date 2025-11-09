@@ -1,0 +1,28 @@
+{
+  "achievements": [
+    {
+        "date": "2016-03-31",
+        "title": "Neural Information Processing研究",
+        "authors": ["田中"],
+        "year": "2024",
+        "publisher": "International Conference on Neural Information Processing",
+        "tags": ["conference", "presentation"]
+    },
+    {
+        "date": "2017-03-25",
+        "title": "Intelligent Systems研究",
+        "authors": ["彭"],
+        "year": "2025",
+        "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+        "tags": ["conference", "presentation"]
+    },
+    {
+        "date": "2017-03-25",
+        "title": "SIC`E研究",
+        "authors": ["彭"],
+        "year": "2024",
+        "publisher": "SICE Festival 2024 with Annual conference",
+        "tags": ["con`ference", "presentation"]
+    }
+  ]
+}
