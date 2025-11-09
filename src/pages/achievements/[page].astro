@@ -1,0 +1,26 @@
+---
+import AchievementList from "@/components/AchievementList.astro";
+import Pagination from "@/components/Pagination.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { GetStaticPathsOptions } from "astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allAchievements = await getCollection("achievements");
+
+  const sortedAchievements = allAchievements.sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+  });
+
+  return paginate(sortedAchievements, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout pageTitle="研究実績">
+  <div class="max-w-5xl w-full mx-auto px-4 py-8">
+    <AchievementList cases={page.data} />
+    <Pagination page={page} />
+  </div>
+</BaseLayout>
