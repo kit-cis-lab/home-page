@@ -1,5 +1,5 @@
 ---
-import CaseList from "@/components/CaseList.astro";
+import AchievementList from "@/components/AchievementList.astro";
 import Pagination from "@/components/Pagination.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { GetStaticPathsOptions } from "astro";
@@ -20,7 +20,7 @@ const { page } = Astro.props;
 
 <BaseLayout pageTitle="研究実績">
   <div class="max-w-5xl w-full mx-auto px-4 py-8">
-    <CaseList cases={page.data} />
+    <AchievementList cases={page.data} />
     <Pagination page={page} />
   </div>
 </BaseLayout>
