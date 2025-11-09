@@ -6,20 +6,20 @@ import type { GetStaticPathsOptions } from "astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const allNews = await getCollection("news");
+  const allAchievements = await getCollection("achievements");
 
-  const sortedNews = allNews.sort((a, b) => {
+  const sortedAchievements = allAchievements.sort((a, b) => {
     return b.data.date.getTime() - a.data.date.getTime();
   });
 
-  return paginate(sortedNews, { pageSize: 20 });
+  return paginate(sortedAchievements, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
 
 <BaseLayout pageTitle="研究実績">
-  <div class="max-w-5xl mx-auto px-4 py-8">
+  <div class="max-w-5xl w-full mx-auto px-4 py-8">
     <CaseList cases={page.data} />
     <Pagination page={page} />
   </div>

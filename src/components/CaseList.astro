@@ -2,39 +2,47 @@
 import { type CollectionEntry } from "astro:content";
 
 interface Props {
-  cases: CollectionEntry<"news">[];
+  cases: CollectionEntry<"achievements">[];
 }
 
 const { cases } = Astro.props;
 ---
 
-<ul class="border-y-1 border-gray-200 divide-y divide-gray-200">
+<ul class="border-y-1 border-gray-200 divide-y divide-gray-200 w-full">
   {
     cases.map(async (caseEntry) => {
-      const { Content } = await caseEntry.render();
-
-      const localeDate = caseEntry.data.date.toLocaleDateString("ja-JP", {
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
-      });
-
-      const tags = ["AI", "Genetic Algorithms", "最適化"];
-
+      const { title, tags, authors, year, publisher, link } = caseEntry.data;
       return (
-        <div class="flex flex-col py-4 gap-3">
-          <b>Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones</b>
-          <div class="">
+        <div class="flex flex-col py-4 gap-4 w-full">
+          <b>{title}</b>
+          <div class="flex flex-wrap gap-3">
             {tags.map((tag) => (
-              <span class="bg-sky-700 rounded-md px-3 py-1 text-sm text-white mr-2 mb-2">
-                {tag}
-              </span>
+              <span class="bg-sky-700 rounded-md px-3 py-1 text-sm text-white mb-2">{tag}</span>
             ))}
           </div>
           <div>
-            <li>著者 : {}</li>
-            <li>発表​年​度 : {}</li>
-            <li>雑​誌​名​・会​議​名​ : {}</li>
+            <li>
+              著者 :
+              {authors.map((author) => (
+                <span class="mr-3">{author}</span>
+              ))}
+            </li>
+            <li>発表​年​度 : {year}</li>
+            <li>
+              雑​誌​名​・会​議​名​ :{" "}
+              {link ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-700 underline hover:text-blue-500"
+                >
+                  {publisher}
+                </a>
+              ) : (
+                publisher
+              )}
+            </li>
           </div>
         </div>
       );

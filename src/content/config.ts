@@ -1,3 +1,4 @@
+import { file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
 const newsCollection = defineCollection({
@@ -8,7 +9,17 @@ const newsCollection = defineCollection({
 });
 
 const achievementsCollection = defineCollection({
-  type: "content",
+  loader: file("src/content/achievements/data.json", {
+    parser: (text) => {
+      const obj = JSON.parse(text);
+      return Object.fromEntries(
+        Object.entries(obj).map(([key, value]) => {
+          const val = value as Record<string, any>;
+          return [key, { ...val, date: new Date(val.date) }];
+        }),
+      );
+    },
+  }),
   schema: z.object({
     date: z.date(),
     title: z.string(),
@@ -16,6 +27,7 @@ const achievementsCollection = defineCollection({
     authors: z.array(z.string()),
     year: z.string(),
     publisher: z.string(),
+    link: z.string().url().optional(),
   }),
 });
 

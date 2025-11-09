@@ -3,7 +3,9 @@ import type { Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  page: Page<CollectionEntry<"news">>;
+  page: Page & {
+    data: CollectionEntry<"news">[] | CollectionEntry<"achievements">[];
+  };
 }
 
 const { page } = Astro.props;
@@ -14,7 +16,7 @@ const { page } = Astro.props;
     page.url.first && page.currentPage > 1 && (
       <a
         href={page.url.first}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
         title="最初のページへ"
       >
         &lt;&lt;
@@ -26,7 +28,7 @@ const { page } = Astro.props;
     page.url.prev && (
       <a
         href={page.url.prev}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
         title="前のページへ"
       >
         {page.currentPage - 1}
@@ -35,7 +37,7 @@ const { page } = Astro.props;
   }
 
   <div
-    class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white"
+    class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white rounded"
   >
     {page.currentPage}
   </div>
@@ -44,7 +46,7 @@ const { page } = Astro.props;
     page.url.next && (
       <a
         href={page.url.next}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
         title="次のページへ"
       >
         {page.currentPage + 1}
@@ -56,7 +58,7 @@ const { page } = Astro.props;
     page.url.last && page.currentPage < page.lastPage && (
       <a
         href={page.url.last}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors"
+        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
         title="最後のページへ"
       >
         &gt;&gt;
