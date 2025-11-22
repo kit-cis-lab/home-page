@@ -27,7 +27,7 @@ const { page } = Astro.props;
 <BaseLayout pageTitle="研究実績">
   <div class="max-w-5xl w-full mx-auto px-4 py-8 gap-3 flex flex-col">
     <AchievementFilter allTags={allTags} />
-    <AchievementList cases={page.data} />
+    <AchievementList achievements={page.data} />
     <Pagination page={page} />
   </div>
 </BaseLayout>
