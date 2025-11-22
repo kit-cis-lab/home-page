@@ -2,6 +2,10 @@
 import { Icon } from "astro-icon/components";
 import AchievementFilterModal from "./AchievementFilterModal.astro";
 
+interface Props {
+  allTags: string[];
+}
+
 const { allTags } = Astro.props;
 ---
 
