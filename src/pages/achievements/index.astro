@@ -1,0 +1,112 @@
+---
+// 1. Enable SSR for this specific page
+export const prerender = false;
+import AchievementFilter from "@/components/AchievementFilter.astro";
+import AchievementList from "@/components/AchievementList.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+// --- Constants ---
+const PAGE_SIZE = 10;
+// --- 2. Retrieve Query Parameters ---
+const urlParams = Astro.url.searchParams;
+const pageParam = urlParams.get("page");
+// Parse current page (default to 1 if invalid or missing)
+const currentPage = pageParam ? Math.max(1, parseInt(pageParam)) : 1;
+
+const allAchievements = await getCollection("achievements");
+const tagCountMap = allAchievements
+  .flatMap((a) => a.data.tags)
+  .reduce((map, tag) => {
+    map.set(tag, (map.get(tag) || 0) + 1);
+    return map;
+  }, new Map<string, number>());
+const allTags = Array.from(tagCountMap.entries())
+  .map(([name, count]) => ({ name, count }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const query: string[] = Astro.url.searchParams.getAll("tags");
+const filteredAchievements =
+  query.length > 0
+    ? allAchievements.filter((item) => query.every((tag) => item.data.tags.includes(tag)))
+    : allAchievements;
+const sortedAchievements = filteredAchievements.sort((a, b) => {
+  return b.data.date.getTime() - a.data.date.getTime();
+});
+
+// --- 6. Manual Pagination Logic ---
+const totalItems = sortedAchievements.length;
+const totalPages = Math.ceil(totalItems / PAGE_SIZE);
+const startIndex = (currentPage - 1) * PAGE_SIZE;
+const endIndex = startIndex + PAGE_SIZE;
+// Slice the data for the current view
+const currentViewData = sortedAchievements.slice(startIndex, endIndex);
+// Helper function to generate pagination URLs while keeping the category param
+const createPageUrl = (page: number): string => {
+  const params = new URLSearchParams();
+  query.forEach((tag) => params.append("tags", tag));
+  params.set("page", page.toString());
+  return `?${params.toString()}`;
+};
+---
+
+<BaseLayout pageTitle="研究実績">
+  <div class="max-w-5xl w-full mx-auto px-4 py-4 gap-3 flex flex-col">
+    <AchievementFilter allTags={allTags} query={query} />
+    <AchievementList achievements={currentViewData} />
+    <nav class="flex justify-center items-center space-x-2 mt-5">
+      {
+        currentPage > 1 && (
+          <a
+            href={createPageUrl(1)}
+            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            title="最初のページへ"
+          >
+            &lt;&lt;
+          </a>
+        )
+      }
+
+      {
+        currentPage > 1 && (
+          <a
+            href={createPageUrl(currentPage - 1)}
+            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            title="前のページへ"
+          >
+            {currentPage - 1}
+          </a>
+        )
+      }
+
+      <div
+        class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white rounded"
+      >
+        {currentPage}
+      </div>
+
+      {
+        currentPage < totalPages && (
+          <a
+            href={createPageUrl(currentPage + 1)}
+            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            title="次のページへ"
+          >
+            {currentPage + 1}
+          </a>
+        )
+      }
+
+      {
+        currentPage < totalPages && (
+          <a
+            href={createPageUrl(totalPages)}
+            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            title="最後のページへ"
+          >
+            &gt;&gt;
+          </a>
+        )
+      }
+    </nav>
+  </div>
+</BaseLayout>
