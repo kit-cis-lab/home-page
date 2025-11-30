@@ -3,20 +3,49 @@ import { Icon } from "astro-icon/components";
 import AchievementFilterModal from "./AchievementFilterModal.astro";
 
 interface Props {
-  allTags: string[];
+  allTags: { name: string; count: number }[];
+  query: string[];
 }
 
-const { allTags } = Astro.props;
+const { allTags, query } = Astro.props;
 ---
 
+<style>
+  #filterToggle:checked ~ #filterModal {
+    display: grid;
+  }
+
+  #filterModal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById("filterToggle") as HTMLInputElement | null;
+  if (toggle) {
+    toggle.addEventListener("change", () => {
+      document.body.style.overflow = toggle.checked ? "hidden" : "auto";
+    });
+  }
+</script>
+
+<input type="checkbox" id="filterToggle" class="hidden" />
+
 <div class="w-full flex justify-end">
-  <a
-    href="#AchievementFilterModal"
+  <label
+    for="filterToggle"
     class="border border-gray-300 rounded-lg px-3 py-1 flex items-center gap-2 hover:bg-gray-100 w-fit"
   >
     <span class="text-sm">Filter</span>
     <Icon name="material-symbols:filter-list-rounded" class="size-4" />
-  </a>
+  </label>
 </div>
 
-<AchievementFilterModal allTags={allTags} />
+<div id="filterModal">
+  <AchievementFilterModal allTags={allTags} query={query} />
+</div>
