@@ -1,0 +1,51 @@
+---
+import { type CollectionEntry } from "astro:content";
+
+interface Props {
+  achievements: CollectionEntry<"achievements">[];
+}
+
+const { achievements } = Astro.props;
+---
+
+<ul class="border-y-1 border-gray-200 divide-y divide-gray-200 w-full">
+  {
+    achievements.map((achievementEntry) => {
+      const { title, tags, authors, year, publisher, link } = achievementEntry.data;
+      return (
+        <li class="flex flex-col py-4 gap-4 w-full">
+          <b>{title}</b>
+          <div class="flex flex-wrap gap-3">
+            {tags.map((tag) => (
+              <span class="bg-sky-700 rounded-md px-3 py-1 text-sm text-white mb-2">{tag}</span>
+            ))}
+          </div>
+          <div>
+            <li>
+              著者 :
+              {authors.map((author) => (
+                <span class="mr-3">{author}</span>
+              ))}
+            </li>
+            <li>発表年度 : {year}</li>
+            <li>
+              雑誌名・会議名 :{" "}
+              {link ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-700 underline hover:text-blue-500"
+                >
+                  {publisher}
+                </a>
+              ) : (
+                publisher
+              )}
+            </li>
+          </div>
+        </li>
+      );
+    })
+  }
+</ul>
