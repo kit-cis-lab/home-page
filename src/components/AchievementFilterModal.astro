@@ -1,61 +1,49 @@
 ---
+import TagPill from "./TagPill.astro";
+
 interface Props {
-  allTags: string[];
+  allTags: { name: string; count: number }[];
+  query: string[];
 }
 
-const { allTags } = Astro.props;
+const { allTags, query } = Astro.props;
 ---
 
-<style>
-  /* modal overlay (hidden by default) */
-  #AchievementFilterModal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: none; /* hidden until targeted */
-    place-items: center;
-    z-index: 50;
-  }
+<!-- Close filter modal toggle -->
+<input type="checkbox" id="filterToggle" class="hidden" />
 
-  /* when URL hash = #AchievementFilterModal → show it */
-  #AchievementFilterModal:target {
-    display: grid;
-  }
-</style>
+<div id="filterModal" class="relative w-2/5 sm:w-1/2 overflow-hidden">
+  <div class="bg-white p-3 rounded-lg shadow-lg w-full mx-auto relative">
+    <!-- Top-right close -->
+    <label
+      for="filterToggle"
+      class="absolute top-3 right-5 text-gray-500 hover:text-gray-900 cursor-pointer text-lg"
+    >
+      &times;
+    </label>
 
-<div id="AchievementFilterModal">
-  <div class="bg-white p-3 rounded-lg shadow-lg h-fit mx-auto">
-    <div class="flex flex-row justify-between divide-x divide-gray-300">
-      <div class="flex flex-col gap-4 p-3">
-        <p class="text-xl font-bold">発表年度</p>
-        <div class="flex flex-col gap-2">
+    <!-- Modal content -->
+    <form method="GET" class="flex flex-col gap-4 w-full">
+      <!-- Setting page number in query parameter to 1-->
+      <input type="hidden" name="page" value="1" />
+      <div class="flex flex-col gap-4 p-3 w-auto min-w-auto">
+        <p class="text-xl font-bold w-full">フィルター</p>
+
+        <div class="flex flex-wrap gap-2 h-60 overflow-auto">
           {
-            ["期間指定なし", "2025", "2024", "2023", "期間指定あり"].map((preset, idx) => (
-              <div class="px-3 py-1">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input
-                    type="radio"
-                    name="achieve-preset"
-                    id={`achieve-preset-${idx}`}
-                    value={preset}
-                    class="w-4 h-4 text-sky-600"
-                    aria-label={`期間プリセット ${preset}`}
-                  />
-                  <span>{preset}</span>
-                </label>
-              </div>
+            allTags.map((tag) => (
+              <TagPill name={tag.name} count={tag.count} selected={query.includes(tag.name)} />
             ))
           }
         </div>
+        <!-- Footer buttons -->
+        <div class="flex flex-row justify-end gap-2">
+          <a href="/achievements/?page=1" class="border border-gray-300 rounded-lg px-4 py-1"
+            >リセット</a
+          >
+          <button type="submit" class="bg-sky-700 text-white px-4 py-1 rounded-lg"> 保存 </button>
+        </div>
       </div>
-      <div class="flex flex-col gap-4 p-3">
-        <p class="text-xl font-bold">タグ</p>
-      </div>
-    </div>
-
-    <div class="flex flex-row justify-end gap-2 mt-6">
-      <a href="#" class="border border-gray-300 rounded-lg px-4 py-1">リセット</a>
-      <a href="#" class="bg-sky-700 text-white px-4 py-1 rounded-lg">保存</a>
-    </div>
+    </form>
   </div>
 </div>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  name: string;
+  count: number;
+  selected?: boolean;
+}
+
+const { name, count, selected = false } = Astro.props;
+---
+
+<label class="cursor-pointer on:hover:border-gray-400 on:hover:border-dotted">
+  <input type="checkbox" name="tags" value={name} class="tag-checkbox hidden" checked={selected} />
+  <span class="tag-text">{name} ({count})</span>
+</label>
+
+<style>
+  .tag-text {
+    display: inline-block;
+    padding: 0.25rem 0.75rem; /* py-1 px-3 */
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: transparent;
+    color: #111827; /* default text color */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tag-checkbox:checked + .tag-text {
+    background-color: #0369a1; /* bg-sky-700 */
+    color: white;
+    border-color: #0369a1; /* border-sky-700 */
+  }
+</style>
