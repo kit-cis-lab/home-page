@@ -14,7 +14,7 @@ const { achievements } = Astro.props;
     return (
       <li class="flex flex-col py-4 gap-4 w-full">
         <!-- Title -->
-        <b class="text-lg">{title}</b>
+        <b class="text-xl font-bold">{title}</b>
 
         <!-- Tags -->
         <div class="flex flex-wrap gap-2">
@@ -25,14 +25,14 @@ const { achievements } = Astro.props;
 
         <!-- Details -->
         <div class="flex flex-col gap-1 text-sm">
-          <div>
+          <p class="text-base">
             著者:
             {authors.map((author) => (
               <span class="mr-2">{author}</span>
             ))}
-          </div>
-          <div>発表年度: {year}</div>
-          <div>
+          </p>
+          <p class="text-base">発表年度: {year}</p>
+          <p class="text-base">
             雑誌名・会議名:{" "}
             {link ? (
               <a
@@ -46,7 +46,7 @@ const { achievements } = Astro.props;
             ) : (
               publisher
             )}
-          </div>
+          </p>
         </div>
       </li>
     );
