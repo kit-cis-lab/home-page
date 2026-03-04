@@ -73,7 +73,9 @@ const { allTags, query } = Astro.props;
     const shadowTop = document.getElementById("tagShadowTop");
     const shadowBottom = document.getElementById("tagShadowBottom");
 
-    if (!container || !shadowTop || !shadowBottom) return;
+    if (!container || !shadowTop || !shadowBottom) {
+      return;
+    }
 
     const updateShadow = () => {
       // 1px buffer to account for rounding errors
@@ -99,16 +101,14 @@ const { allTags, query } = Astro.props;
       }
     };
 
+    // passive: true improves scroll performance on mobile devices
     container.addEventListener("scroll", updateShadow, { passive: true });
 
-    // Use ResizeObserver to detect when the modal becomes visible and dimensions change
+    // Use ResizeObserver to detect when the modal becomes visible
     const resizeObserver = new ResizeObserver(() => {
       updateShadow();
     });
     resizeObserver.observe(container);
-
-    // Initial check
-    updateShadow();
   }
 
   // Handle both standard DOM load and Astro page transitions
