@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@astrojs/node": "^9.5.1",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.11",
     "astro-icon": "^1.1.5",
