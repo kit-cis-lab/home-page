@@ -27,9 +27,15 @@ const { allTags, query } = Astro.props;
 
 <script>
   const toggle = document.getElementById("filterToggle") as HTMLInputElement | null;
-  if (toggle) {
+  const filterButton = document.getElementById("filterButton");
+
+  if (toggle && filterButton) {
     toggle.addEventListener("change", () => {
       document.body.style.overflow = toggle.checked ? "hidden" : "auto";
+    });
+
+    filterButton.addEventListener("click", () => {
+      toggle.click();
     });
   }
 </script>
@@ -37,13 +43,14 @@ const { allTags, query } = Astro.props;
 <input type="checkbox" id="filterToggle" class="hidden" />
 
 <div class="w-full flex justify-end">
-  <label
-    for="filterToggle"
+  <button
+    type="button"
+    id="filterButton"
     class="border border-gray-300 rounded-lg px-3 py-1 flex items-center gap-2 hover:bg-gray-100 w-fit"
   >
     <span class="text-base">フィルター</span>
     <Icon name="material-symbols:filter-list-rounded" class="size-4" />
-  </label>
+  </button>
 </div>
 
 <div id="filterModal">
