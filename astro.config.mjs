@@ -4,6 +4,7 @@ import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 
 import icon from "astro-icon";
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +16,9 @@ export default defineConfig({
       },
     },
   },
-
+  adapter: node({
+    mode: "standalone",
+  }),
   integrations: [icon()],
   markdown: {
     rehypePlugins: [

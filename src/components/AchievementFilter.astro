@@ -1,0 +1,58 @@
+---
+import { Icon } from "astro-icon/components";
+import AchievementFilterModal from "./AchievementFilterModal.astro";
+
+interface Props {
+  allTags: { name: string; count: number }[];
+  query: string[];
+}
+
+const { allTags, query } = Astro.props;
+---
+
+<style>
+  #filterToggle:checked ~ #filterModal {
+    display: grid;
+  }
+
+  #filterModal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+  }
+</style>
+
+<script>
+  const filterToggle = document.getElementById("filterToggle");
+  const filterButton = document.getElementById("filterButton");
+
+  if (filterToggle instanceof HTMLInputElement && filterButton) {
+    filterToggle.addEventListener("change", () => {
+      document.body.style.overflow = filterToggle.checked ? "hidden" : "auto";
+    });
+
+    filterButton.addEventListener("click", () => {
+      filterToggle.click();
+    });
+  }
+</script>
+
+<input type="checkbox" id="filterToggle" class="hidden" />
+
+<div class="w-full flex justify-end">
+  <button
+    type="button"
+    id="filterButton"
+    class="border border-gray-300 rounded-lg px-3 py-1 flex items-center gap-2 hover:bg-gray-100 w-fit"
+  >
+    <span class="text-base">フィルター</span>
+    <Icon name="material-symbols:filter-list-rounded" class="size-4" />
+  </button>
+</div>
+
+<div id="filterModal">
+  <AchievementFilterModal allTags={allTags} query={query} />
+</div>

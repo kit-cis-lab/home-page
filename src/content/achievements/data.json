@@ -1,0 +1,1166 @@
+{
+  "achievement-001": {
+    "title": "Memory Switching L-SHADE Based on Efficient Non-convex Ratio",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "SICE Festival 2025 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2025/",
+    "date": "2025-09-12"
+  },
+  "achievement-002": {
+    "title": "Generation of Game Levels Using a GPT",
+    "tags": [
+      "ゲームAI",
+      "言語メディア処理",
+      "機械学習"
+    ],
+    "authors": [
+      "甘中雄斗",
+      "飯間等",
+      "吉貞心"
+    ],
+    "year": "2025",
+    "publisher": "SICE Festival 2025 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2025/",
+    "date": "2025-09-12"
+  },
+  "achievement-003": {
+    "title": "メタヒューリスティクスを適応的に割り当てる最適化法",
+    "tags": [
+      "ヒューリスティクス",
+      "数理最適化",
+      "オペレーションズリサーチ"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "電気学会電子・情報・システム部門大会",
+    "link": "https://www.iee.jp/eiss/event/conf2025/",
+    "date": "2025-08-27"
+  },
+  "achievement-004": {
+    "title": "Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等",
+      "軽野義行"
+    ],
+    "year": "2025",
+    "publisher": "IEEE Access",
+    "link": "https://ieeexplore.ieee.org/document/11122443",
+    "date": "2025-08-20"
+  },
+  "achievement-005": {
+    "title": "背景音楽生成のための機械学習による漫画の感情分析",
+    "tags": [
+      "機械学習",
+      "感性",
+      "音声生成"
+    ],
+    "authors": [
+      "北尾春樹",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "第69回システム制御情報学会研究発表講演会",
+    "link": "https://sci25.iscie.or.jp/",
+    "date": "2025-05-27"
+  },
+  "achievement-006": {
+    "title": "Foreign Exchange Rate Forecast by a Large Language Model Integrated with Trend Description",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "Peng Kexin",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "https://www.ismsi.org/",
+    "date": "2025-04-27"
+  },
+  "achievement-007": {
+    "title": "GPTを用いたゲームレベルの生成",
+    "tags": [
+      "ゲームAI",
+      "言語メディア処理",
+      "機械学習"
+    ],
+    "authors": [
+      "吉貞心",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "情報処理学会第87回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/87/",
+    "date": "2025-03-13"
+  },
+  "achievement-008": {
+    "title": "時系列予測に対する大規模言語モデルの全ブロック出力の統合",
+    "tags": [
+      "時系列予測",
+      "機械学習",
+      "言語メディア処理"
+    ],
+    "authors": [
+      "大道拓真",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "情報処理学会第87回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/87/",
+    "date": "2025-03-13"
+  },
+  "achievement-009": {
+    "title": "非凸度によりメモリを切り替えるL-SHADE",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2025",
+    "publisher": "第27回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium202503.html",
+    "date": "2025-03-04"
+  },
+  "achievement-010": {
+    "title": "Predicting FX market movements using GAN with limit order event data",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "時系列予測"
+    ],
+    "authors": [
+      "Peng Kexin",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "Finance Research Letters",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1544612324015563?CMX_ID=&SIS_ID=&dgcid=STMJ_219742_AUTH_SERV_PA&utm_acid=142901937&utm_campaign=STMJ_219742_AUTH_SERV_PA&utm_in=DM528767&utm_medium=email&utm_source=AC_",
+    "date": "2024-12-06"
+  },
+  "achievement-011": {
+    "title": "Binary Classification for Enhancing Explainability of Combined Black-Box and White-Box Models",
+    "tags": [
+      "機械学習",
+      "AI説明可能性"
+    ],
+    "authors": [
+      "田中慎太郎",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Neural Information Processing",
+    "link": "https://iconip2024.org/",
+    "date": "2024-12-04"
+  },
+  "achievement-012": {
+    "title": "Foreign Exchange Rate Forecast by a Large Language Model Integrated with Trend Description ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "Peng Kexin",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Soft Computing and Machine Intelligence",
+    "link": "https://www.iscmi.us/",
+    "date": "2024-11-23"
+  },
+  "achievement-013": {
+    "title": "為替レートを予測する機械学習法の性能比較 ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "寺村優太",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2024",
+    "link": "https://www.sice.or.jp/org/SSI2024/",
+    "date": "2024-11-13"
+  },
+  "achievement-014": {
+    "title": "Prediction of Foreign Exchange Rates by a Large Language Model ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "Peng Kexin",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "SICE Festival 2024 with Annual conference",
+    "link": "https://sice.jp/siceac/sice2024/",
+    "date": "2024-08-30"
+  },
+  "achievement-015": {
+    "title": "欠勤日までの日数を考慮した代替出勤依頼アルゴリズム ",
+    "tags": [
+      "スケジューリング",
+      "オペレーションズリサーチ"
+    ],
+    "authors": [
+      "岩崎希望",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "第68回システム制御情報学会研究発表講演会",
+    "link": "https://sci24.iscie.or.jp/",
+    "date": "2024-05-25"
+  },
+  "achievement-016": {
+    "title": "同一並列機械工程を対象とした注文受託と生産スケジュールの同時最適化 ",
+    "tags": [
+      "オペレーションズリサーチ",
+      "数理計画法",
+      "スケジューリング"
+    ],
+    "authors": [
+      "木村俊星",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "第68回システム制御情報学会研究発表講演会",
+    "link": "https://sci24.iscie.or.jp/",
+    "date": "2024-05-25"
+  },
+  "achievement-017": {
+    "title": "条件付き変分オートエンコーダを用いたビデオゲームのレベル生成 ",
+    "tags": [
+      "ゲームAI",
+      "深層学習",
+      "機械学習"
+    ],
+    "authors": [
+      "吉貞心",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "情報処理学会第86回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/86/",
+    "date": "2024-03-17"
+  },
+  "achievement-018": {
+    "title": "CT to MRI Image Translation Using CycleGAN: A Deep Learning Approach for Cross-Modality Medical Imaging ",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "画像生成",
+      "深層学習"
+    ],
+    "authors": [
+      "Anamika Jha",
+      "飯間等"
+    ],
+    "year": "2024",
+    "publisher": "International Conference on Agents and Artificial Intelligence",
+    "link": "https://icaart.scitevents.org/?y=2024",
+    "date": "2024-02-25"
+  },
+  "achievement-019": {
+    "title": "Accelerated Text Data Augmentation Using a Paraphrase Generation Model with Round-Trip Translation as a Supervisor",
+    "tags": [
+      "機械学習",
+      "言語メディア処理"
+    ],
+    "authors": [
+      "田中慎太郎",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "International Conference on Machine Learning and Applications",
+    "link": "https://www.icmla-conference.org/icmla23/",
+    "date": "2023-12-15"
+  },
+  "achievement-020": {
+    "title": "遺伝的アルゴリズムと勾配法の組合せによるアンサンブル深層学習 ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "深層学習",
+      "機械学習"
+    ],
+    "authors": [
+      "中野力都",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "電気学会システム/制御合同研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW00008BB6",
+    "date": "2023-12-03"
+  },
+  "achievement-021": {
+    "title": "Decision Transformerの巡回セールスマン問題への適用",
+    "tags": [
+      "強化学習",
+      "探索・論理・推論アルゴリズム",
+      "数理最適化"
+    ],
+    "authors": [
+      "中村祥幸",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-022": {
+    "title": "決定木と深層学習を組み合わせて解釈可能性を向上させた分類器の提案 ",
+    "tags": [
+      "機械学習",
+      "深層学習",
+      "AI説明可能性"
+    ],
+    "authors": [
+      "田中慎太郎",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-023": {
+    "title": "特徴量を重み付けしたガウス過程分類器 ",
+    "tags": [
+      "機械学習",
+      "統計的学習"
+    ],
+    "authors": [
+      "高浦拓人",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会2023",
+    "link": "https://www.sice.or.jp/org/SSI2023/",
+    "date": "2023-11-10"
+  },
+  "achievement-024": {
+    "title": "往復翻訳を教師とした言い換え生成モデルによる高速テキストデータ拡張 ",
+    "tags": [
+      "機械学習",
+      "言語メディア処理"
+    ],
+    "authors": [
+      "田中慎太郎",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第37回人工知能学会全国大会",
+    "link": "https://www.ai-gakkai.or.jp/jsai2023/",
+    "date": "2023-06-07"
+  },
+  "achievement-025": {
+    "title": "遺伝的アルゴリズムとAdamを統合した機械学習法の改良",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
+    "authors": [
+      "中野力都",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-026": {
+    "title": "受諾回数を考慮した代替出勤依頼アルゴリズムの提案",
+    "tags": [
+      "スケジューリング",
+      "オペレーションズリサーチ"
+    ],
+    "authors": [
+      "岩崎希望",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-027": {
+    "title": "敵対的生成ネットワークによる為替レートの予測",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "時系列予測"
+    ],
+    "authors": [
+      "Peng Kexin",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第67回システム制御情報学会研究発表講演会",
+    "link": "https://sci23.iscie.or.jp/",
+    "date": "2023-05-19"
+  },
+  "achievement-028": {
+    "title": "最適部分目的関数値の推定を導入した遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2023/",
+    "date": "2023-03-17"
+  },
+  "achievement-029": {
+    "title": "小集団を入れ替える並列遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算"
+    ],
+    "authors": [
+      "室田真吾",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "第23回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium202301.html",
+    "date": "2023-03-06"
+  },
+  "achievement-030": {
+    "title": "LSTMに基づくノイズ除去オートエンコーダによる時系列予測",
+    "tags": [
+      "深層学習",
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "安藤大貴",
+      "飯間等"
+    ],
+    "year": "2023",
+    "publisher": "情報処理学会第85回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/85/",
+    "date": "2023-03-02"
+  },
+  "achievement-031": {
+    "title": "複数の決定変数を同時に更新する人工蜂コロニー最適化法",
+    "tags": [
+      "ヒューリスティクス",
+      "進化計算",
+      "数理最適化"
+    ],
+    "authors": [
+      "勝田翼",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会システム研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW000081D3",
+    "date": "2022-11-26"
+  },
+  "achievement-032": {
+    "title": "Evolutionary Multi-task Optimization Introducing Task Assignment Based on a Search Degree ",
+    "tags": [
+      "進化計算",
+      "数理最適化",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Conference on Engineering and Emerging Technologies",
+    "link": "https://iceet.net/program-2/",
+    "date": "2022-10-27"
+  },
+  "achievement-033": {
+    "title": "ドローンを用いた集荷と配達のスケジューリング問題に対する遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "スケジューリング・シンポジウム",
+    "link": "http://www.scheduling.jp/symposium/2022/",
+    "date": "2022-09-16"
+  },
+  "achievement-034": {
+    "title": "生成個体のタスク割当を改良した進化的マルチタスク最適化法",
+    "tags": [
+      "進化計算",
+      "数理最適化",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会電子・情報・システム部門大会",
+    "link": "https://www.iee.jp/eiss/event/conf2022/",
+    "date": "2022-08-31"
+  },
+  "achievement-035": {
+    "title": "Hyperheuristic Method Based on Deep Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "深層学習",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "中村祥幸",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Congress on Advanced Applied Informatics",
+    "link": "https://iaiai.org/conference/aai2022/",
+    "date": "2022-07-05"
+  },
+  "achievement-036": {
+    "title": "異種データを生成する敵対的生成ネットワーク",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "深層学習",
+      "データマイニング"
+    ],
+    "authors": [
+      "室田真吾",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/browse/ieejeiss/142/7/_contents/-char/ja",
+    "date": "2022-07-01"
+  },
+  "achievement-037": {
+    "title": "Pre-classified Multi-model Machine Learning",
+    "tags": [
+      "機械学習",
+      "表現学習(エンベディング)"
+    ],
+    "authors": [
+      "Gian Marco Soldo",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "第66回システム制御情報学会研究発表講演会",
+    "link": "https://sci22.iscie.or.jp/",
+    "date": "2022-05-20"
+  },
+  "achievement-038": {
+    "title": "差分進化を組み込んだ改良人工蜂コロニー最適化法",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
+    "authors": [
+      "勝田翼",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "第66回システム制御情報学会研究発表講演会",
+    "link": "https://sci22.iscie.or.jp/",
+    "date": "2022-05-20"
+  },
+  "achievement-039": {
+    "title": "Genetic Algorithm with Machine Learning to Estimate the Optimal Objective Function Values of Subproblems",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "http://www.ismsi.org/schedule.html",
+    "date": "2022-04-10"
+  },
+  "achievement-040": {
+    "title": "遺伝的アルゴリズムによるドローン配達スケジューリング－複数の異なるドローン台数に対する同時最適化－",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/article/ieejeiss/142/4/142_499/_article/-char/ja",
+    "date": "2022-04-01"
+  },
+  "achievement-041": {
+    "title": "報酬の設定を自動化した集中型高速マルチエージェント強化学習法",
+    "tags": [
+      "強化学習",
+      "マルチエージェントシステム",
+      "機械学習"
+    ],
+    "authors": [
+      "佐々木薫",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "システム制御情報学会論文誌",
+    "link": "https://www.iscie.or.jp/pub/journal",
+    "date": "2022-03-22"
+  },
+  "achievement-042": {
+    "title": "ニューラルネットワークによる時系列の増減予測のための正規化に関する考察 ",
+    "tags": [
+      "ニューラルネットワーク",
+      "時系列予測",
+      "機械学習"
+    ],
+    "authors": [
+      "伊藤克輝",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "情報処理学会第84回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/84/",
+    "date": "2022-03-05"
+  },
+  "achievement-043": {
+    "title": "優先度付き経験再生を用いた深層強化学習によるカリキュラム設計法 ",
+    "tags": [
+      "強化学習",
+      "深層学習",
+      "知的教育システム(ITS)"
+    ],
+    "authors": [
+      "堀田颯平",
+      "飯間等"
+    ],
+    "year": "2022",
+    "publisher": "情報処理学会第84回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/84/",
+    "date": "2022-03-05"
+  },
+  "achievement-044": {
+    "title": "LSTM forecasting foreign exchange rates using limit order book",
+    "tags": [
+      "深層学習",
+      "時系列予測"
+    ],
+    "authors": [
+      "伊藤克輝",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "Finance Research Letters",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1544612321004827",
+    "date": "2021-10-26"
+  },
+  "achievement-045": {
+    "title": "Genetic algorithm for scheduling of parcel delivery by drones ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "Journal of Advanced Mechanical Design, Systems, and Manufacturing",
+    "link": "https://www.jstage.jst.go.jp/article/jamdsm/15/6/15_2021jamdsm0069/_article/-char/en",
+    "date": "2021-10-15"
+  },
+  "achievement-046": {
+    "title": "部分問題の最適値を推定する機械学習を組み込んだ遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "インテリジェント・システム・シンポジウム",
+    "link": "https://sites.google.com/view/fan2021online",
+    "date": "2021-09-21"
+  },
+  "achievement-047": {
+    "title": "強化学習を用いたカリキュラム学習のためのカリキュラム設計法",
+    "tags": [
+      "強化学習",
+      "知的教育システム(ITS)",
+      "機械学習"
+    ],
+    "authors": [
+      "堀田颯平",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2021/",
+    "date": "2021-03-11"
+  },
+  "achievement-048": {
+    "title": "敵対的生成ネットワークを用いた異種データの生成 ",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "深層学習",
+      "データマイニング"
+    ],
+    "authors": [
+      "室田真吾",
+      "飯間等"
+    ],
+    "year": "2021",
+    "publisher": "電気学会全国大会",
+    "link": "https://www.iee.jp/blog/taikai2021/",
+    "date": "2021-03-11"
+  },
+  "achievement-049": {
+    "title": "小包配達スケジューリング問題に対する遺伝的アルゴリズムの適用 ",
+    "tags": [
+      "スケジューリング",
+      "遺伝的アルゴリズム",
+      "オペレーションズリサーチ"
+    ],
+    "authors": [
+      "狭間陽平",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "電気学会研究会",
+    "link": "https://workshop.iee.or.jp/sbtk/cgi-bin/sbtk-showprogram.cgi?workshopid=SBW00006F35",
+    "date": "2020-12-12"
+  },
+  "achievement-050": {
+    "title": "Design of an Artificial Game Entertainer by Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "矢口喬脩",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "IEEE Conference on Games",
+    "link": "https://ieee-cog.org/2020/",
+    "date": "2020-08-24"
+  },
+  "achievement-051": {
+    "title": "序盤の探索を効率化した実数値遺伝的アルゴリズム",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "西阪和貴",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "電気学会論文誌C",
+    "link": "https://www.jstage.jst.go.jp/article/ieejeiss/140/7/140_820/_article/-char/ja",
+    "date": "2020-07-02"
+  },
+  "achievement-052": {
+    "title": "報酬の調整を不要とする集中型高速マルチエージェント強化学習法",
+    "tags": [
+      "強化学習",
+      "マルチエージェントシステム",
+      "機械学習"
+    ],
+    "authors": [
+      "佐々木薫",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "第64回システム制御情報学会研究発表講演会",
+    "link": "https://sci20.iscie.or.jp/",
+    "date": "2020-05-20"
+  },
+  "achievement-053": {
+    "title": "リカレントニューラルネットワークによる為替レートの予測 ",
+    "tags": [
+      "ニューラルネットワーク",
+      "時系列予測",
+      "深層学習"
+    ],
+    "authors": [
+      "伊藤克輝",
+      "飯間等"
+    ],
+    "year": "2020",
+    "publisher": "情報処理学会第82回全国大会",
+    "link": "https://www.ipsj.or.jp/event/taikai/82/",
+    "date": "2020-03-06"
+  },
+  "achievement-054": {
+    "title": "Differential Evolution Using Linkage Identification ",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "飯間等",
+      "横山慧二郎"
+    ],
+    "year": "2019",
+    "publisher": "IEEE International Conference on Tools with Artificial Intelligence",
+    "link": "https://ictai2019.org/",
+    "date": "2019-11-06"
+  },
+  "achievement-055": {
+    "title": "Real-coded Genetic Algorithm Realizing Fast Convergence by Reducing Its Population Size ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "数理最適化"
+    ],
+    "authors": [
+      "西阪和貴",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "IEEE International Conference on Tools with Artificial Intelligence",
+    "link": "https://ictai2019.org/",
+    "date": "2019-11-06"
+  },
+  "achievement-056": {
+    "title": "強化学習を用いた接待ゲームプレイヤ設計法の性能評価 ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "矢口喬脩",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "2019年電気学会電子・情報・システム部門大会",
+    "link": "http://denki.iee.jp/eiss/conf2019/",
+    "date": "2019-09-06"
+  },
+  "achievement-057": {
+    "title": "集団サイズを切り替えて序盤の探索を効率化した実数値遺伝的アルゴリズム",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "西阪和貴",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "2019年電気学会電子・情報・システム部門大会",
+    "link": "http://denki.iee.jp/eiss/conf2019/",
+    "date": "2019-09-06"
+  },
+  "achievement-058": {
+    "title": "強化学習を用いた接待ゲームプレイヤの設計",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "矢口喬脩",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第63回システム制御情報学会研究発表講演会",
+    "link": "http://sci19.iscie.or.jp/",
+    "date": "2019-05-23"
+  },
+  "achievement-059": {
+    "title": "",
+    "tags": [
+      "進化計算",
+      "遺伝的アルゴリズム"
+    ],
+    "authors": [
+      "横山慧二郎",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第15回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201901.html",
+    "date": "2019-03-08"
+  },
+  "achievement-060": {
+    "title": "初期の探索を効率化した実数値遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
+    "authors": [
+      "西阪",
+      "飯間等"
+    ],
+    "year": "2019",
+    "publisher": "第15回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201901.html",
+    "date": "2019-03-08"
+  },
+  "achievement-061": {
+    "title": "Nonlinear Optimization Method Based on Stochastic Gradient Descent for Fast Convergence",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "渡邊貴裕",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "IEEE International Conference on Systems, Man and Cybernetics",
+    "link": "http://www.smc2018.org/",
+    "date": "2018-10-10"
+  },
+  "achievement-062": {
+    "title": "確率的勾配降下法に基づく非線形最適化法-勾配推定のための減衰率を適応的に調整する方法-",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "渡邊貴裕",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "第62回システム制御情報学会研究発表講演会",
+    "link": "http://sci18.iscie.or.jp/",
+    "date": "2018-05-16"
+  },
+  "achievement-063": {
+    "title": "集中型と独立型を併用したマルチエージェント強化学習法～独立型学習の停止条件の比較～",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習",
+      "機械学習"
+    ],
+    "authors": [
+      "赤羽根拓真",
+      "飯間等"
+    ],
+    "year": "2018",
+    "publisher": "第45回知能システムシンポジウム",
+    "link": "http://www.sice.or.jp/org/i-sys/is45/",
+    "date": "2018-03-08"
+  },
+  "achievement-064": {
+    "title": "Extension of Stochastic Gradient Descent Method for Nonlinear Optimization Problems with Summed Functions",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "渡邊貴裕",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "The Sixth Asian Conference on Information Systems",
+    "link": "http://www.rupp.edu.kh/acis2017/",
+    "date": "2017-12-12"
+  },
+  "achievement-065": {
+    "title": "Multiagent Reinforcement Learning Method Using Centralized Learning and Independent Learning ",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習",
+      "機械学習"
+    ],
+    "authors": [
+      "赤羽根拓真",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "The Sixth Asian Conference on Information Systems",
+    "link": "http://www.rupp.edu.kh/acis2017/",
+    "date": "2017-12-12"
+  },
+  "achievement-066": {
+    "title": "Improving generalization ability in a puzzle game using reinforcement learning ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "大西鴻哉",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "IEEE Conference on Computational Intelligence in Games",
+    "link": "http://www.cig2017.com/",
+    "date": "2017-08-22"
+  },
+  "achievement-067": {
+    "title": "パズルゲームに対する強化学習を用いた汎化性能の向上-キャラクターの経路を決定する方法-",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "大西",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第11回コンピューテーショナル・インテリジェンス研究会",
+    "link": "http://www.sice.or.jp/ci/11th_ci.html",
+    "date": "2017-06-27"
+  },
+  "achievement-068": {
+    "title": "強化学習に基づく組合せ最適化問題の解法における報酬の設定 ",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "中島裕貴",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第61回システム制御情報学会研究発表講演会",
+    "link": "https://sci17.iscie.or.jp/",
+    "date": "2017-05-25"
+  },
+  "achievement-069": {
+    "title": "パズルゲームに対する強化学習を用いた汎化性能の向上",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
+    "authors": [
+      "大西鴻哉",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第61回システム制御情報学会研究発表講演会",
+    "link": "https://sci17.iscie.or.jp/",
+    "date": "2017-05-25"
+  },
+  "achievement-070": {
+    "title": "The Solution of Combinatorial Optimization Problems Based on Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "中島",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "International Conference on Intelligent Systems, Metaheuristics & Swarm Intelligence",
+    "link": "http://www.ismsi.org/ismsi2017.html",
+    "date": "2017-03-25"
+  },
+  "achievement-071": {
+    "title": "目的関数が和の形で表される非線形最適化問題に対する確率的勾配降下法に基づく解法",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "渡邊貴裕",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第44回知能システムシンポジウム",
+    "link": "http://www.ds.u-tokai.ac.jp/is44/",
+    "date": "2017-03-14"
+  },
+  "achievement-072": {
+    "title": "集中型と独立型の並列マルチエージェント強化学習",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習"
+    ],
+    "authors": [
+      "赤羽根",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第44回知能システムシンポジウム",
+    "link": "http://www.ds.u-tokai.ac.jp/is44/",
+    "date": "2017-03-14"
+  },
+  "achievement-073": {
+    "title": "進化計算による群ロボット探索システムの設計",
+    "tags": [
+      "進化計算",
+      "群知能",
+      "知能ロボティクス"
+    ],
+    "authors": [
+      "川本聡真",
+      "飯間等"
+    ],
+    "year": "2017",
+    "publisher": "第12回進化計算学会研究会",
+    "link": "http://www.jpnsec.org/symposium201701.html",
+    "date": "2017-03-13"
+  },
+  "achievement-074": {
+    "title": "強化学習に基づく組合せ最適化問題の解法",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
+    "authors": [
+      "中島裕貴",
+      "飯間等"
+    ],
+    "year": "2016",
+    "publisher": "計測自動制御学会システム・情報部門学術講演会",
+    "link": "http://www.sice.or.jp/org/SSI2016/index.php",
+    "date": "2016-12-06"
+  }
+}

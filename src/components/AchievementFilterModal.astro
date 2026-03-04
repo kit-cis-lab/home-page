@@ -1,0 +1,140 @@
+---
+import TagPill from "./TagPill.astro";
+import { clsx } from "clsx";
+
+interface Props {
+  allTags: { name: string; count: number }[];
+  query: string[];
+}
+
+const { allTags, query } = Astro.props;
+---
+
+<!-- Modal Container -->
+<div
+  class="relative w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-lg overflow-hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="filterTitle"
+>
+  <div class="bg-white p-3 rounded-lg shadow-lg w-full mx-auto relative">
+    <!-- Top-right close -->
+    <button
+      type="button"
+      id="closeFilterButton"
+      class="absolute top-2 right-4 text-gray-500 hover:text-gray-900 cursor-pointer text-3xl p-2 leading-none"
+      aria-label="閉じる"
+    >
+      &times;
+    </button>
+
+    <!-- Modal content -->
+    <form method="GET" class="flex flex-col gap-4 w-full">
+      <!-- Setting page number in query parameter to 1-->
+      <input type="hidden" name="page" value="1" />
+      <div class="flex flex-col gap-4 p-3 w-auto min-w-auto">
+        <p id="filterTitle" class="text-xl font-bold w-full">フィルター</p>
+
+        <div class="relative">
+          <div id="tagContainer" class="flex flex-wrap gap-2 h-60 overflow-auto pb-4">
+            {
+              allTags.map((tag) => (
+                <TagPill name={tag.name} count={tag.count} selected={query.includes(tag.name)} />
+              ))
+            }
+          </div>
+          <div
+            id="tagShadowTop"
+            class={clsx(
+              "pointer-events-none absolute top-0 left-0 right-0 h-10",
+              "bg-gradient-to-b from-gray-200 to-transparent",
+              "transition-opacity duration-300 opacity-0",
+            )}
+          >
+          </div>
+          <div
+            id="tagShadowBottom"
+            class={clsx(
+              "pointer-events-none absolute bottom-0 left-0 right-0 h-10",
+              "bg-gradient-to-t from-gray-200 to-transparent",
+              "transition-opacity duration-300 opacity-0",
+            )}
+          >
+          </div>
+        </div>
+        <!-- Footer buttons -->
+        <div class="flex flex-row justify-end gap-2">
+          <a href="/achievements?page=1" class="border border-gray-300 rounded-lg px-4 py-1">リセット</a>
+          <button type="submit" class="bg-sky-700 text-white px-4 py-1 rounded-lg"> 保存 </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function setupTagScrollShadow() {
+    const tagContainer = document.getElementById("tagContainer");
+    const shadowTop = document.getElementById("tagShadowTop");
+    const shadowBottom = document.getElementById("tagShadowBottom");
+    const filterToggle = document.getElementById("filterToggle");
+    const closeButton = document.getElementById("closeFilterButton");
+
+    if (!tagContainer || !shadowTop || !shadowBottom) {
+      return;
+    }
+
+    const updateShadow = () => {
+      // 1px buffer to account for rounding errors
+      const isAtBottom =
+        Math.ceil(tagContainer.scrollTop + tagContainer.clientHeight) >= tagContainer.scrollHeight - 1;
+      const isAtTop = tagContainer.scrollTop <= 1;
+
+      // Top Shadow
+      if (isAtTop) {
+        shadowTop.classList.add("opacity-0");
+        shadowTop.classList.remove("opacity-100");
+      } else {
+        shadowTop.classList.add("opacity-100");
+        shadowTop.classList.remove("opacity-0");
+      }
+
+      // Bottom Shadow
+      if (isAtBottom) {
+        shadowBottom.classList.add("opacity-0");
+        shadowBottom.classList.remove("opacity-100");
+      } else {
+        shadowBottom.classList.add("opacity-100");
+        shadowBottom.classList.remove("opacity-0");
+      }
+    };
+
+    // passive: true improves scroll performance on mobile devices
+    tagContainer.addEventListener("scroll", updateShadow, { passive: true });
+
+    // Use ResizeObserver to detect when the modal becomes visible
+    const resizeObserver = new ResizeObserver(() => {
+      updateShadow();
+    });
+    resizeObserver.observe(tagContainer);
+
+    // Close logic
+    if (filterToggle instanceof HTMLInputElement && closeButton) {
+      closeButton.addEventListener("click", () => {
+        filterToggle.checked = false;
+        filterToggle.dispatchEvent(new Event("change"));
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && filterToggle.checked) {
+          filterToggle.checked = false;
+          filterToggle.dispatchEvent(new Event("change"));
+        }
+      });
+    }
+  }
+
+  // Handle both standard DOM load and Astro page transitions
+  document.addEventListener("DOMContentLoaded", setupTagScrollShadow);
+  document.addEventListener("astro:page-load", setupTagScrollShadow);
+</script>
