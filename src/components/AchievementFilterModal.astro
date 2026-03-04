@@ -10,25 +10,30 @@ interface Props {
 const { allTags, query } = Astro.props;
 ---
 
-<!-- Close filter modal toggle -->
-<input type="checkbox" id="filterToggle" class="hidden" />
-
-<div id="filterModal" class="relative w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-lg overflow-hidden">
+<!-- Modal Container -->
+<div
+  class="relative w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5 max-w-lg overflow-hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="filterTitle"
+>
   <div class="bg-white p-3 rounded-lg shadow-lg w-full mx-auto relative">
     <!-- Top-right close -->
-    <label
-      for="filterToggle"
+    <button
+      type="button"
+      id="closeFilterButton"
       class="absolute top-2 right-4 text-gray-500 hover:text-gray-900 cursor-pointer text-3xl p-2 leading-none"
+      aria-label="閉じる"
     >
       &times;
-    </label>
+    </button>
 
     <!-- Modal content -->
     <form method="GET" class="flex flex-col gap-4 w-full">
       <!-- Setting page number in query parameter to 1-->
       <input type="hidden" name="page" value="1" />
       <div class="flex flex-col gap-4 p-3 w-auto min-w-auto">
-        <p class="text-xl font-bold w-full">フィルター</p>
+        <p id="filterTitle" class="text-xl font-bold w-full">フィルター</p>
 
         <div class="relative">
           <div id="tagContainer" class="flex flex-wrap gap-2 h-60 overflow-auto pb-4">
@@ -69,18 +74,21 @@ const { allTags, query } = Astro.props;
 
 <script>
   function setupTagScrollShadow() {
-    const container = document.getElementById("tagContainer");
+    const tagContainer = document.getElementById("tagContainer");
     const shadowTop = document.getElementById("tagShadowTop");
     const shadowBottom = document.getElementById("tagShadowBottom");
+    const filterToggle = document.getElementById("filterToggle");
+    const closeButton = document.getElementById("closeFilterButton");
 
-    if (!container || !shadowTop || !shadowBottom) {
+    if (!tagContainer || !shadowTop || !shadowBottom) {
       return;
     }
 
     const updateShadow = () => {
       // 1px buffer to account for rounding errors
-      const isAtBottom = Math.ceil(container.scrollTop + container.clientHeight) >= container.scrollHeight - 1;
-      const isAtTop = container.scrollTop <= 1;
+      const isAtBottom =
+        Math.ceil(tagContainer.scrollTop + tagContainer.clientHeight) >= tagContainer.scrollHeight - 1;
+      const isAtTop = tagContainer.scrollTop <= 1;
 
       // Top Shadow
       if (isAtTop) {
@@ -102,13 +110,28 @@ const { allTags, query } = Astro.props;
     };
 
     // passive: true improves scroll performance on mobile devices
-    container.addEventListener("scroll", updateShadow, { passive: true });
+    tagContainer.addEventListener("scroll", updateShadow, { passive: true });
 
     // Use ResizeObserver to detect when the modal becomes visible
     const resizeObserver = new ResizeObserver(() => {
       updateShadow();
     });
-    resizeObserver.observe(container);
+    resizeObserver.observe(tagContainer);
+
+    // Close logic
+    if (filterToggle instanceof HTMLInputElement && closeButton) {
+      closeButton.addEventListener("click", () => {
+        filterToggle.checked = false;
+        filterToggle.dispatchEvent(new Event("change"));
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && filterToggle.checked) {
+          filterToggle.checked = false;
+          filterToggle.dispatchEvent(new Event("change"));
+        }
+      });
+    }
   }
 
   // Handle both standard DOM load and Astro page transitions

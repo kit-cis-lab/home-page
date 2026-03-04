@@ -26,16 +26,16 @@ const { allTags, query } = Astro.props;
 </style>
 
 <script>
-  const toggle = document.getElementById("filterToggle") as HTMLInputElement | null;
+  const filterToggle = document.getElementById("filterToggle");
   const filterButton = document.getElementById("filterButton");
 
-  if (toggle && filterButton) {
-    toggle.addEventListener("change", () => {
-      document.body.style.overflow = toggle.checked ? "hidden" : "auto";
+  if (filterToggle instanceof HTMLInputElement && filterButton) {
+    filterToggle.addEventListener("change", () => {
+      document.body.style.overflow = filterToggle.checked ? "hidden" : "auto";
     });
 
     filterButton.addEventListener("click", () => {
-      toggle.click();
+      filterToggle.click();
     });
   }
 </script>
