@@ -1,7 +1,11 @@
 {
   "achievement-001": {
     "title": "Memory Switching L-SHADE Based on Efficient Non-convex Ratio",
-    "tags": [],
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -12,8 +16,12 @@
     "date": "2025-09-12"
   },
   "achievement-002": {
-    "title": "",
-    "tags": [],
+    "title": "Generation of Game Levels Using a GPT",
+    "tags": [
+      "ゲームAI",
+      "言語メディア処理",
+      "機械学習"
+    ],
     "authors": [
       "甘中雄斗",
       "飯間等",
@@ -25,8 +33,12 @@
     "date": "2025-09-12"
   },
   "achievement-003": {
-    "title": "",
-    "tags": [],
+    "title": "メタヒューリスティクスを適応的に割り当てる最適化法",
+    "tags": [
+      "ヒューリスティクス",
+      "数理最適化",
+      "オペレーションズリサーチ"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -38,7 +50,11 @@
   },
   "achievement-004": {
     "title": "Genetic Algorithms for a Scheduling Problem of Parcel Delivery and Pickup by Drones",
-    "tags": [],
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等",
@@ -50,10 +66,14 @@
     "date": "2025-08-20"
   },
   "achievement-005": {
-    "title": "",
-    "tags": [],
+    "title": "背景音楽生成のための機械学習による漫画の感情分析",
+    "tags": [
+      "機械学習",
+      "感性",
+      "音声生成"
+    ],
     "authors": [
-      "北尾",
+      "北尾春樹",
       "飯間等"
     ],
     "year": "2025",
@@ -62,10 +82,13 @@
     "date": "2025-05-27"
   },
   "achievement-006": {
-    "title": "",
-    "tags": [],
+    "title": "Foreign Exchange Rate Forecast by a Large Language Model Integrated with Trend Description",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2025",
@@ -75,7 +98,11 @@
   },
   "achievement-007": {
     "title": "GPTを用いたゲームレベルの生成",
-    "tags": [],
+    "tags": [
+      "ゲームAI",
+      "言語メディア処理",
+      "機械学習"
+    ],
     "authors": [
       "吉貞心",
       "飯間等"
@@ -87,7 +114,11 @@
   },
   "achievement-008": {
     "title": "時系列予測に対する大規模言語モデルの全ブロック出力の統合",
-    "tags": [],
+    "tags": [
+      "時系列予測",
+      "機械学習",
+      "言語メディア処理"
+    ],
     "authors": [
       "大道拓真",
       "飯間等"
@@ -98,8 +129,12 @@
     "date": "2025-03-13"
   },
   "achievement-009": {
-    "title": "",
-    "tags": [],
+    "title": "非凸度によりメモリを切り替えるL-SHADE",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -110,10 +145,13 @@
     "date": "2025-03-04"
   },
   "achievement-010": {
-    "title": "",
-    "tags": [],
+    "title": "Predicting FX market movements using GAN with limit order event data",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "時系列予測"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -122,10 +160,13 @@
     "date": "2024-12-06"
   },
   "achievement-011": {
-    "title": "",
-    "tags": [],
+    "title": "Binary Classification for Enhancing Explainability of Combined Black-Box and White-Box Models",
+    "tags": [
+      "機械学習",
+      "AI説明可能性"
+    ],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2024",
@@ -134,10 +175,13 @@
     "date": "2024-12-04"
   },
   "achievement-012": {
-    "title": "",
-    "tags": [],
+    "title": "Foreign Exchange Rate Forecast by a Large Language Model Integrated with Trend Description ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -146,10 +190,13 @@
     "date": "2024-11-23"
   },
   "achievement-013": {
-    "title": "",
-    "tags": [],
+    "title": "為替レートを予測する機械学習法の性能比較 ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "寺村",
+      "寺村優太",
       "飯間等"
     ],
     "year": "2024",
@@ -158,10 +205,13 @@
     "date": "2024-11-13"
   },
   "achievement-014": {
-    "title": "",
-    "tags": [],
+    "title": "Prediction of Foreign Exchange Rates by a Large Language Model ",
+    "tags": [
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2024",
@@ -170,10 +220,13 @@
     "date": "2024-08-30"
   },
   "achievement-015": {
-    "title": "",
-    "tags": [],
+    "title": "欠勤日までの日数を考慮した代替出勤依頼アルゴリズム ",
+    "tags": [
+      "スケジューリング",
+      "オペレーションズリサーチ"
+    ],
     "authors": [
-      "岩崎",
+      "岩崎希望",
       "飯間等"
     ],
     "year": "2024",
@@ -182,10 +235,14 @@
     "date": "2024-05-25"
   },
   "achievement-016": {
-    "title": "",
-    "tags": [],
+    "title": "同一並列機械工程を対象とした注文受託と生産スケジュールの同時最適化 ",
+    "tags": [
+      "オペレーションズリサーチ",
+      "数理計画法",
+      "スケジューリング"
+    ],
     "authors": [
-      "木村",
+      "木村俊星",
       "飯間等"
     ],
     "year": "2024",
@@ -194,8 +251,12 @@
     "date": "2024-05-25"
   },
   "achievement-017": {
-    "title": "",
-    "tags": [],
+    "title": "条件付き変分オートエンコーダを用いたビデオゲームのレベル生成 ",
+    "tags": [
+      "ゲームAI",
+      "深層学習",
+      "機械学習"
+    ],
     "authors": [
       "吉貞心",
       "飯間等"
@@ -206,10 +267,14 @@
     "date": "2024-03-17"
   },
   "achievement-018": {
-    "title": "",
-    "tags": [],
+    "title": "CT to MRI Image Translation Using CycleGAN: A Deep Learning Approach for Cross-Modality Medical Imaging ",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "画像生成",
+      "深層学習"
+    ],
     "authors": [
-      "Jha",
+      "Anamika Jha",
       "飯間等"
     ],
     "year": "2024",
@@ -218,10 +283,13 @@
     "date": "2024-02-25"
   },
   "achievement-019": {
-    "title": "",
-    "tags": [],
+    "title": "Accelerated Text Data Augmentation Using a Paraphrase Generation Model with Round-Trip Translation as a Supervisor",
+    "tags": [
+      "機械学習",
+      "言語メディア処理"
+    ],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -230,10 +298,14 @@
     "date": "2023-12-15"
   },
   "achievement-020": {
-    "title": "",
-    "tags": [],
+    "title": "遺伝的アルゴリズムと勾配法の組合せによるアンサンブル深層学習 ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "深層学習",
+      "機械学習"
+    ],
     "authors": [
-      "中野",
+      "中野力都",
       "飯間等"
     ],
     "year": "2023",
@@ -242,10 +314,14 @@
     "date": "2023-12-03"
   },
   "achievement-021": {
-    "title": "",
-    "tags": [],
+    "title": "Decision Transformerの巡回セールスマン問題への適用",
+    "tags": [
+      "強化学習",
+      "探索・論理・推論アルゴリズム",
+      "数理最適化"
+    ],
     "authors": [
-      "中村",
+      "中村祥幸",
       "飯間等"
     ],
     "year": "2023",
@@ -254,10 +330,14 @@
     "date": "2023-11-10"
   },
   "achievement-022": {
-    "title": "",
-    "tags": [],
+    "title": "決定木と深層学習を組み合わせて解釈可能性を向上させた分類器の提案 ",
+    "tags": [
+      "機械学習",
+      "深層学習",
+      "AI説明可能性"
+    ],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -266,10 +346,13 @@
     "date": "2023-11-10"
   },
   "achievement-023": {
-    "title": "",
-    "tags": [],
+    "title": "特徴量を重み付けしたガウス過程分類器 ",
+    "tags": [
+      "機械学習",
+      "統計的学習"
+    ],
     "authors": [
-      "高浦",
+      "高浦拓人",
       "飯間等"
     ],
     "year": "2023",
@@ -278,10 +361,13 @@
     "date": "2023-11-10"
   },
   "achievement-024": {
-    "title": "",
-    "tags": [],
+    "title": "往復翻訳を教師とした言い換え生成モデルによる高速テキストデータ拡張 ",
+    "tags": [
+      "機械学習",
+      "言語メディア処理"
+    ],
     "authors": [
-      "田中",
+      "田中慎太郎",
       "飯間等"
     ],
     "year": "2023",
@@ -290,10 +376,14 @@
     "date": "2023-06-07"
   },
   "achievement-025": {
-    "title": "",
-    "tags": [],
+    "title": "遺伝的アルゴリズムとAdamを統合した機械学習法の改良",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
     "authors": [
-      "中野",
+      "中野力都",
       "飯間等"
     ],
     "year": "2023",
@@ -302,10 +392,13 @@
     "date": "2023-05-19"
   },
   "achievement-026": {
-    "title": "",
-    "tags": [],
+    "title": "受諾回数を考慮した代替出勤依頼アルゴリズムの提案",
+    "tags": [
+      "スケジューリング",
+      "オペレーションズリサーチ"
+    ],
     "authors": [
-      "岩崎",
+      "岩崎希望",
       "飯間等"
     ],
     "year": "2023",
@@ -314,10 +407,13 @@
     "date": "2023-05-19"
   },
   "achievement-027": {
-    "title": "",
-    "tags": [],
+    "title": "敵対的生成ネットワークによる為替レートの予測",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "時系列予測"
+    ],
     "authors": [
-      "彭",
+      "Peng Kexin",
       "飯間等"
     ],
     "year": "2023",
@@ -326,8 +422,12 @@
     "date": "2023-05-19"
   },
   "achievement-028": {
-    "title": "",
-    "tags": [],
+    "title": "最適部分目的関数値の推定を導入した遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -338,10 +438,13 @@
     "date": "2023-03-17"
   },
   "achievement-029": {
-    "title": "",
-    "tags": [],
+    "title": "小集団を入れ替える並列遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算"
+    ],
     "authors": [
-      "室田",
+      "室田真吾",
       "飯間等"
     ],
     "year": "2023",
@@ -350,10 +453,14 @@
     "date": "2023-03-06"
   },
   "achievement-030": {
-    "title": "",
-    "tags": [],
+    "title": "LSTMに基づくノイズ除去オートエンコーダによる時系列予測",
+    "tags": [
+      "深層学習",
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "安藤",
+      "安藤大貴",
       "飯間等"
     ],
     "year": "2023",
@@ -362,10 +469,14 @@
     "date": "2023-03-02"
   },
   "achievement-031": {
-    "title": "",
-    "tags": [],
+    "title": "複数の決定変数を同時に更新する人工蜂コロニー最適化法",
+    "tags": [
+      "ヒューリスティクス",
+      "進化計算",
+      "数理最適化"
+    ],
     "authors": [
-      "勝田",
+      "勝田翼",
       "飯間等"
     ],
     "year": "2022",
@@ -374,8 +485,12 @@
     "date": "2022-11-26"
   },
   "achievement-032": {
-    "title": "",
-    "tags": [],
+    "title": "Evolutionary Multi-task Optimization Introducing Task Assignment Based on a Search Degree ",
+    "tags": [
+      "進化計算",
+      "数理最適化",
+      "ヒューリスティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -386,8 +501,12 @@
     "date": "2022-10-27"
   },
   "achievement-033": {
-    "title": "",
-    "tags": [],
+    "title": "ドローンを用いた集荷と配達のスケジューリング問題に対する遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -398,8 +517,12 @@
     "date": "2022-09-16"
   },
   "achievement-034": {
-    "title": "",
-    "tags": [],
+    "title": "生成個体のタスク割当を改良した進化的マルチタスク最適化法",
+    "tags": [
+      "進化計算",
+      "数理最適化",
+      "ヒューリスティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -410,10 +533,14 @@
     "date": "2022-08-31"
   },
   "achievement-035": {
-    "title": "",
-    "tags": [],
+    "title": "Hyperheuristic Method Based on Deep Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "深層学習",
+      "ヒューリスティクス"
+    ],
     "authors": [
-      "中村",
+      "中村祥幸",
       "飯間等"
     ],
     "year": "2022",
@@ -422,10 +549,14 @@
     "date": "2022-07-05"
   },
   "achievement-036": {
-    "title": "",
-    "tags": [],
+    "title": "異種データを生成する敵対的生成ネットワーク",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "深層学習",
+      "データマイニング"
+    ],
     "authors": [
-      "室田",
+      "室田真吾",
       "飯間等"
     ],
     "year": "2022",
@@ -434,10 +565,13 @@
     "date": "2022-07-01"
   },
   "achievement-037": {
-    "title": "",
-    "tags": [],
+    "title": "Pre-classified Multi-model Machine Learning",
+    "tags": [
+      "機械学習",
+      "表現学習(エンベディング)"
+    ],
     "authors": [
-      "Soldo",
+      "Gian Marco Soldo",
       "飯間等"
     ],
     "year": "2022",
@@ -446,10 +580,14 @@
     "date": "2022-05-20"
   },
   "achievement-038": {
-    "title": "",
-    "tags": [],
+    "title": "差分進化を組み込んだ改良人工蜂コロニー最適化法",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス",
+      "数理最適化"
+    ],
     "authors": [
-      "勝田",
+      "勝田翼",
       "飯間等"
     ],
     "year": "2022",
@@ -458,8 +596,12 @@
     "date": "2022-05-20"
   },
   "achievement-039": {
-    "title": "",
-    "tags": [],
+    "title": "Genetic Algorithm with Machine Learning to Estimate the Optimal Objective Function Values of Subproblems",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -470,8 +612,12 @@
     "date": "2022-04-10"
   },
   "achievement-040": {
-    "title": "",
-    "tags": [],
+    "title": "遺伝的アルゴリズムによるドローン配達スケジューリング－複数の異なるドローン台数に対する同時最適化－",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -482,10 +628,14 @@
     "date": "2022-04-01"
   },
   "achievement-041": {
-    "title": "",
-    "tags": [],
+    "title": "報酬の設定を自動化した集中型高速マルチエージェント強化学習法",
+    "tags": [
+      "強化学習",
+      "マルチエージェントシステム",
+      "機械学習"
+    ],
     "authors": [
-      "木",
+      "佐々木薫",
       "飯間等"
     ],
     "year": "2022",
@@ -494,10 +644,14 @@
     "date": "2022-03-22"
   },
   "achievement-042": {
-    "title": "",
-    "tags": [],
+    "title": "ニューラルネットワークによる時系列の増減予測のための正規化に関する考察 ",
+    "tags": [
+      "ニューラルネットワーク",
+      "時系列予測",
+      "機械学習"
+    ],
     "authors": [
-      "伊藤",
+      "伊藤克輝",
       "飯間等"
     ],
     "year": "2022",
@@ -506,10 +660,14 @@
     "date": "2022-03-05"
   },
   "achievement-043": {
-    "title": "",
-    "tags": [],
+    "title": "優先度付き経験再生を用いた深層強化学習によるカリキュラム設計法 ",
+    "tags": [
+      "強化学習",
+      "深層学習",
+      "知的教育システム(ITS)"
+    ],
     "authors": [
-      "堀田",
+      "堀田颯平",
       "飯間等"
     ],
     "year": "2022",
@@ -518,10 +676,13 @@
     "date": "2022-03-05"
   },
   "achievement-044": {
-    "title": "",
-    "tags": [],
+    "title": "LSTM forecasting foreign exchange rates using limit order book",
+    "tags": [
+      "深層学習",
+      "時系列予測"
+    ],
     "authors": [
-      "伊藤",
+      "伊藤克輝",
       "飯間等"
     ],
     "year": "2021",
@@ -530,8 +691,12 @@
     "date": "2021-10-26"
   },
   "achievement-045": {
-    "title": "",
-    "tags": [],
+    "title": "Genetic algorithm for scheduling of parcel delivery by drones ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "スケジューリング",
+      "知能ロボティクス"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -542,8 +707,12 @@
     "date": "2021-10-15"
   },
   "achievement-046": {
-    "title": "",
-    "tags": [],
+    "title": "部分問題の最適値を推定する機械学習を組み込んだ遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "機械学習",
+      "数理最適化"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -554,10 +723,14 @@
     "date": "2021-09-21"
   },
   "achievement-047": {
-    "title": "",
-    "tags": [],
+    "title": "強化学習を用いたカリキュラム学習のためのカリキュラム設計法",
+    "tags": [
+      "強化学習",
+      "知的教育システム(ITS)",
+      "機械学習"
+    ],
     "authors": [
-      "堀田",
+      "堀田颯平",
       "飯間等"
     ],
     "year": "2021",
@@ -566,10 +739,14 @@
     "date": "2021-03-11"
   },
   "achievement-048": {
-    "title": "",
-    "tags": [],
+    "title": "敵対的生成ネットワークを用いた異種データの生成 ",
+    "tags": [
+      "敵対的生成ネットワーク(GAN)",
+      "深層学習",
+      "データマイニング"
+    ],
     "authors": [
-      "室田",
+      "室田真吾",
       "飯間等"
     ],
     "year": "2021",
@@ -578,8 +755,12 @@
     "date": "2021-03-11"
   },
   "achievement-049": {
-    "title": "",
-    "tags": [],
+    "title": "小包配達スケジューリング問題に対する遺伝的アルゴリズムの適用 ",
+    "tags": [
+      "スケジューリング",
+      "遺伝的アルゴリズム",
+      "オペレーションズリサーチ"
+    ],
     "authors": [
       "狭間陽平",
       "飯間等"
@@ -590,10 +771,14 @@
     "date": "2020-12-12"
   },
   "achievement-050": {
-    "title": "",
-    "tags": [],
+    "title": "Design of an Artificial Game Entertainer by Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
-      "矢口",
+      "矢口喬脩",
       "飯間等"
     ],
     "year": "2020",
@@ -602,10 +787,14 @@
     "date": "2020-08-24"
   },
   "achievement-051": {
-    "title": "",
-    "tags": [],
+    "title": "序盤の探索を効率化した実数値遺伝的アルゴリズム",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
     "authors": [
-      "西阪",
+      "西阪和貴",
       "飯間等"
     ],
     "year": "2020",
@@ -614,10 +803,14 @@
     "date": "2020-07-02"
   },
   "achievement-052": {
-    "title": "",
-    "tags": [],
+    "title": "報酬の調整を不要とする集中型高速マルチエージェント強化学習法",
+    "tags": [
+      "強化学習",
+      "マルチエージェントシステム",
+      "機械学習"
+    ],
     "authors": [
-      "木",
+      "佐々木薫",
       "飯間等"
     ],
     "year": "2020",
@@ -626,10 +819,14 @@
     "date": "2020-05-20"
   },
   "achievement-053": {
-    "title": "",
-    "tags": [],
+    "title": "リカレントニューラルネットワークによる為替レートの予測 ",
+    "tags": [
+      "ニューラルネットワーク",
+      "時系列予測",
+      "深層学習"
+    ],
     "authors": [
-      "伊藤",
+      "伊藤克輝",
       "飯間等"
     ],
     "year": "2020",
@@ -638,11 +835,14 @@
     "date": "2020-03-06"
   },
   "achievement-054": {
-    "title": "",
-    "tags": [],
+    "title": "Differential Evolution Using Linkage Identification ",
+    "tags": [
+      "進化計算",
+      "ヒューリスティクス"
+    ],
     "authors": [
-      "横山",
-      "飯間等"
+      "飯間等",
+      "横山慧二郎"
     ],
     "year": "2019",
     "publisher": "IEEE International Conference on Tools with Artificial Intelligence",
@@ -650,10 +850,14 @@
     "date": "2019-11-06"
   },
   "achievement-055": {
-    "title": "",
-    "tags": [],
+    "title": "Real-coded Genetic Algorithm Realizing Fast Convergence by Reducing Its Population Size ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "数理最適化"
+    ],
     "authors": [
-      "西阪",
+      "西阪和貴",
       "飯間等"
     ],
     "year": "2019",
@@ -662,10 +866,14 @@
     "date": "2019-11-06"
   },
   "achievement-056": {
-    "title": "",
-    "tags": [],
+    "title": "強化学習を用いた接待ゲームプレイヤ設計法の性能評価 ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
-      "矢口",
+      "矢口喬脩",
       "飯間等"
     ],
     "year": "2019",
@@ -674,10 +882,14 @@
     "date": "2019-09-06"
   },
   "achievement-057": {
-    "title": "",
-    "tags": [],
+    "title": "集団サイズを切り替えて序盤の探索を効率化した実数値遺伝的アルゴリズム",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
     "authors": [
-      "西阪",
+      "西阪和貴",
       "飯間等"
     ],
     "year": "2019",
@@ -686,10 +898,14 @@
     "date": "2019-09-06"
   },
   "achievement-058": {
-    "title": "",
-    "tags": [],
+    "title": "強化学習を用いた接待ゲームプレイヤの設計",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
-      "矢口",
+      "矢口喬脩",
       "飯間等"
     ],
     "year": "2019",
@@ -699,9 +915,12 @@
   },
   "achievement-059": {
     "title": "",
-    "tags": [],
+    "tags": [
+      "進化計算",
+      "遺伝的アルゴリズム"
+    ],
     "authors": [
-      "横山",
+      "横山慧二郎",
       "飯間等"
     ],
     "year": "2019",
@@ -710,8 +929,12 @@
     "date": "2019-03-08"
   },
   "achievement-060": {
-    "title": "",
-    "tags": [],
+    "title": "初期の探索を効率化した実数値遺伝的アルゴリズム ",
+    "tags": [
+      "遺伝的アルゴリズム",
+      "進化計算",
+      "ヒューリスティクス"
+    ],
     "authors": [
       "西阪",
       "飯間等"
@@ -722,10 +945,13 @@
     "date": "2019-03-08"
   },
   "achievement-061": {
-    "title": "",
-    "tags": [],
+    "title": "Nonlinear Optimization Method Based on Stochastic Gradient Descent for Fast Convergence",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "渡邊",
+      "渡邊貴裕",
       "飯間等"
     ],
     "year": "2018",
@@ -734,10 +960,13 @@
     "date": "2018-10-10"
   },
   "achievement-062": {
-    "title": "",
-    "tags": [],
+    "title": "確率的勾配降下法に基づく非線形最適化法-勾配推定のための減衰率を適応的に調整する方法-",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "渡邊",
+      "渡邊貴裕",
       "飯間等"
     ],
     "year": "2018",
@@ -746,10 +975,14 @@
     "date": "2018-05-16"
   },
   "achievement-063": {
-    "title": "",
-    "tags": [],
+    "title": "集中型と独立型を併用したマルチエージェント強化学習法～独立型学習の停止条件の比較～",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習",
+      "機械学習"
+    ],
     "authors": [
-      "赤羽根",
+      "赤羽根拓真",
       "飯間等"
     ],
     "year": "2018",
@@ -758,10 +991,13 @@
     "date": "2018-03-08"
   },
   "achievement-064": {
-    "title": "",
-    "tags": [],
+    "title": "Extension of Stochastic Gradient Descent Method for Nonlinear Optimization Problems with Summed Functions",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "渡邊",
+      "渡邊貴裕",
       "飯間等"
     ],
     "year": "2017",
@@ -770,10 +1006,14 @@
     "date": "2017-12-12"
   },
   "achievement-065": {
-    "title": "",
-    "tags": [],
+    "title": "Multiagent Reinforcement Learning Method Using Centralized Learning and Independent Learning ",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習",
+      "機械学習"
+    ],
     "authors": [
-      "赤羽根",
+      "赤羽根拓真",
       "飯間等"
     ],
     "year": "2017",
@@ -782,10 +1022,14 @@
     "date": "2017-12-12"
   },
   "achievement-066": {
-    "title": "",
-    "tags": [],
+    "title": "Improving generalization ability in a puzzle game using reinforcement learning ",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
-      "大西",
+      "大西鴻哉",
       "飯間等"
     ],
     "year": "2017",
@@ -794,8 +1038,12 @@
     "date": "2017-08-22"
   },
   "achievement-067": {
-    "title": "",
-    "tags": [],
+    "title": "パズルゲームに対する強化学習を用いた汎化性能の向上-キャラクターの経路を決定する方法-",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
       "大西",
       "飯間等"
@@ -806,10 +1054,14 @@
     "date": "2017-06-27"
   },
   "achievement-068": {
-    "title": "",
-    "tags": [],
+    "title": "強化学習に基づく組合せ最適化問題の解法における報酬の設定 ",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "中島",
+      "中島裕貴",
       "飯間等"
     ],
     "year": "2017",
@@ -818,10 +1070,14 @@
     "date": "2017-05-25"
   },
   "achievement-069": {
-    "title": "",
-    "tags": [],
+    "title": "パズルゲームに対する強化学習を用いた汎化性能の向上",
+    "tags": [
+      "強化学習",
+      "ゲームAI",
+      "機械学習"
+    ],
     "authors": [
-      "大西",
+      "大西鴻哉",
       "飯間等"
     ],
     "year": "2017",
@@ -830,8 +1086,12 @@
     "date": "2017-05-25"
   },
   "achievement-070": {
-    "title": "",
-    "tags": [],
+    "title": "The Solution of Combinatorial Optimization Problems Based on Reinforcement Learning ",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
       "中島",
       "飯間等"
@@ -842,10 +1102,13 @@
     "date": "2017-03-25"
   },
   "achievement-071": {
-    "title": "",
-    "tags": [],
+    "title": "目的関数が和の形で表される非線形最適化問題に対する確率的勾配降下法に基づく解法",
+    "tags": [
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "渡邊",
+      "渡邊貴裕",
       "飯間等"
     ],
     "year": "2017",
@@ -854,8 +1117,11 @@
     "date": "2017-03-14"
   },
   "achievement-072": {
-    "title": "",
-    "tags": [],
+    "title": "集中型と独立型の並列マルチエージェント強化学習",
+    "tags": [
+      "マルチエージェントシステム",
+      "強化学習"
+    ],
     "authors": [
       "赤羽根",
       "飯間等"
@@ -866,10 +1132,14 @@
     "date": "2017-03-14"
   },
   "achievement-073": {
-    "title": "",
-    "tags": [],
+    "title": "進化計算による群ロボット探索システムの設計",
+    "tags": [
+      "進化計算",
+      "群知能",
+      "知能ロボティクス"
+    ],
     "authors": [
-      "川本",
+      "川本聡真",
       "飯間等"
     ],
     "year": "2017",
@@ -878,10 +1148,14 @@
     "date": "2017-03-13"
   },
   "achievement-074": {
-    "title": "",
-    "tags": [],
+    "title": "強化学習に基づく組合せ最適化問題の解法",
+    "tags": [
+      "強化学習",
+      "数理最適化",
+      "機械学習"
+    ],
     "authors": [
-      "中島",
+      "中島裕貴",
       "飯間等"
     ],
     "year": "2016",
