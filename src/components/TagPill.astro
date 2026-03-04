@@ -1,4 +1,6 @@
 ---
+import { clsx } from "clsx";
+
 interface Props {
   name: string;
   count: number;
@@ -8,26 +10,16 @@ interface Props {
 const { name, count, selected = false } = Astro.props;
 ---
 
-<label class="cursor-pointer on:hover:border-gray-400 on:hover:border-dotted">
-  <input type="checkbox" name="tags" value={name} class="tag-checkbox hidden" checked={selected} />
-  <span class="tag-text">{name} ({count})</span>
+<label class="cursor-pointer group">
+  <input type="checkbox" name="tags" value={name} class="peer hidden" checked={selected} />
+  <span
+    class={clsx(
+      "inline-block py-1 px-3 border rounded-lg cursor-pointer transition-all duration-200",
+      "bg-transparent text-gray-900 border-gray-300",
+      "group-hover:border-gray-500",
+      "peer-checked:bg-sky-700 peer-checked:text-white peer-checked:border-sky-700",
+    )}
+  >
+    {name} ({count})
+  </span>
 </label>
-
-<style>
-  .tag-text {
-    display: inline-block;
-    padding: 0.25rem 0.75rem; /* py-1 px-3 */
-    border: 1px solid #d1d5db; /* gray-300 */
-    border-radius: 0.5rem; /* rounded-lg */
-    background-color: transparent;
-    color: #111827; /* default text color */
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .tag-checkbox:checked + .tag-text {
-    background-color: #0369a1; /* bg-sky-700 */
-    color: white;
-    border-color: #0369a1; /* border-sky-700 */
-  }
-</style>
