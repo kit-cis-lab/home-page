@@ -11,7 +11,13 @@ const PAGE_SIZE = 10;
 const urlParams = Astro.url.searchParams;
 const pageParam = urlParams.get("page");
 // Parse current page (default to 1 if invalid or missing)
-const currentPage = pageParam ? Math.max(1, parseInt(pageParam)) : 1;
+let currentPage = 1;
+if (pageParam) {
+  const parsed = parseInt(pageParam, 10);
+  if (!Number.isNaN(parsed)) {
+    currentPage = Math.max(1, parsed);
+  }
+}
 
 const allAchievements = await getCollection("achievements");
 const tagCountMap = allAchievements
