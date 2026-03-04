@@ -46,7 +46,7 @@ const startIndex = (currentPage - 1) * PAGE_SIZE;
 const endIndex = startIndex + PAGE_SIZE;
 // Slice the data for the current view
 const currentViewData = sortedAchievements.slice(startIndex, endIndex);
-// Helper function to generate pagination URLs while keeping the category param
+// Helper function to generate pagination URLs while keeping the tags param
 const createPageUrl = (page: number): string => {
   const params = new URLSearchParams();
   query.forEach((tag) => params.append("tags", tag));
