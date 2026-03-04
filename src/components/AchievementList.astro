@@ -9,46 +9,55 @@ const { achievements } = Astro.props;
 ---
 
 <ul class="border-y border-gray-200 divide-y divide-gray-200 w-full">
-  {achievements.map((achievement) => {
-    const { title, tags, authors, year, publisher, link } = achievement.data;
-    return (
-      <li class="flex flex-col py-4 gap-4 w-full">
-        <!-- Title -->
-        <b class="text-xl font-bold">{title}</b>
+  {
+    achievements.map((achievement) => {
+      const { title, tags, authors, year, publisher, link } = achievement.data;
+      return (
+        <li class="flex flex-col py-4 gap-4 w-full">
+          {/* Title */}
+          <b class="text-xl font-bold break-words">{title}</b>
 
-        <!-- Tags -->
-        <div class="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span class="bg-sky-700 rounded-md px-2 py-1 text-sm text-white">{tag}</span>
-          ))}
-        </div>
-
-        <!-- Details -->
-        <div class="flex flex-col gap-1 text-sm">
-          <p class="text-base">
-            著者:
-            {authors.map((author) => (
-              <span class="mr-2">{author}</span>
+          {/* Tags */}
+          <div class="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span class="bg-sky-700 rounded-md px-2 py-1 text-sm text-white">{tag}</span>
             ))}
-          </p>
-          <p class="text-base">発表年度: {year}</p>
-          <p class="text-base">
-            雑誌名・会議名:{" "}
-            {link ? (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-700 underline hover:text-blue-500"
-              >
-                {publisher}
-              </a>
-            ) : (
-              publisher
-            )}
-          </p>
-        </div>
-      </li>
-    );
-  })}
+          </div>
+
+          {/* Details */}
+          <div class="flex flex-col gap-1 text-sm">
+            <p class="text-base flex flex-wrap gap-x-2">
+              <span class="shrink-0">著者:</span>
+              <span class="break-words">
+                {authors.map((author, index) => (
+                  <span>
+                    {author}
+                    {index < authors.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </span>
+            </p>
+            <p class="text-base">発表年度: {year}</p>
+            <p class="text-base flex flex-wrap gap-x-2">
+              <span class="shrink-0">雑誌名・会議名:</span>
+              <span class="break-words">
+                {link ? (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-700 underline hover:text-blue-500 break-all"
+                  >
+                    {publisher}
+                  </a>
+                ) : (
+                  publisher
+                )}
+              </span>
+            </p>
+          </div>
+        </li>
+      );
+    })
+  }
 </ul>
