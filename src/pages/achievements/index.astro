@@ -1,16 +1,16 @@
 ---
-// 1. Enable SSR for this specific page
+// Enable SSR for this specific page
 export const prerender = false;
+
 import AchievementFilter from "@/components/AchievementFilter.astro";
 import AchievementList from "@/components/AchievementList.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-// --- Constants ---
+
 const PAGE_SIZE = 10;
-// --- 2. Retrieve Query Parameters ---
 const urlParams = Astro.url.searchParams;
 const pageParam = urlParams.get("page");
-// Parse current page (default to 1 if invalid or missing)
+
 let currentPage = 1;
 if (pageParam) {
   const parsed = parseInt(pageParam, 10);
@@ -39,14 +39,14 @@ const sortedAchievements = filteredAchievements.sort((a, b) => {
   return b.data.date.getTime() - a.data.date.getTime();
 });
 
-// --- 6. Manual Pagination Logic ---
 const totalItems = sortedAchievements.length;
 const totalPages = Math.ceil(totalItems / PAGE_SIZE);
+currentPage = Math.min(Math.max(1, currentPage), totalPages);
+
 const startIndex = (currentPage - 1) * PAGE_SIZE;
 const endIndex = startIndex + PAGE_SIZE;
-// Slice the data for the current view
 const currentViewData = sortedAchievements.slice(startIndex, endIndex);
-// Helper function to generate pagination URLs while keeping the tags param
+
 const createPageUrl = (page: number): string => {
   const params = new URLSearchParams();
   query.forEach((tag) => params.append("tags", tag));
