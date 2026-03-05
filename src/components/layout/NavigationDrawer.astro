@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import clsx from "clsx";
-import type { NavLink } from "./Navigation.astro";
+import type { NavLink } from "../ui/Navigation.astro";
 
 interface Props {
   navLinks: NavLink[];
@@ -16,11 +16,7 @@ const currentPath = Astro.url.pathname;
   id="nav-drawer"
   class="invisible fixed top-0 left-0 h-full w-2/3 max-w-xs bg-white z-50 transform -translate-x-full transition-transform duration-300 flex flex-col p-4"
 >
-  <Icon
-    id="nav-drawer-close-button"
-    name="material-symbols:close"
-    class="text-2xl self-end"
-  />
+  <Icon id="nav-drawer-close-button" name="material-symbols:close" class="text-2xl self-end" />
   <div class="w-full flex flex-col items-start gap-2 mt-8">
     {
       navLinks.map((link) => (

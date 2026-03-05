@@ -1,6 +1,5 @@
 ---
 import TagPill from "./TagPill.astro";
-import { clsx } from "clsx";
 
 interface Props {
   allTags: { name: string; count: number }[];
@@ -45,26 +44,28 @@ const { allTags, query } = Astro.props;
           </div>
           <div
             id="tagShadowTop"
-            class={clsx(
+            class:list={[
               "pointer-events-none absolute top-0 left-0 right-0 h-10",
               "bg-gradient-to-b from-gray-200 to-transparent",
               "transition-opacity duration-300 opacity-0",
-            )}
+            ]}
           >
           </div>
           <div
             id="tagShadowBottom"
-            class={clsx(
+            class:list={[
               "pointer-events-none absolute bottom-0 left-0 right-0 h-10",
               "bg-gradient-to-t from-gray-200 to-transparent",
               "transition-opacity duration-300 opacity-0",
-            )}
+            ]}
           >
           </div>
         </div>
         <!-- Footer buttons -->
         <div class="flex flex-row justify-end gap-2">
-          <a href="/achievements?page=1" class="border border-gray-300 rounded-lg px-4 py-1">リセット</a>
+          <a href="/achievements?page=1" class="border border-gray-300 rounded-lg px-4 py-1"
+            >リセット</a
+          >
           <button type="submit" class="bg-sky-700 text-white px-4 py-1 rounded-lg"> 保存 </button>
         </div>
       </div>
@@ -87,7 +88,8 @@ const { allTags, query } = Astro.props;
     const updateShadow = () => {
       // 1px buffer to account for rounding errors
       const isAtBottom =
-        Math.ceil(tagContainer.scrollTop + tagContainer.clientHeight) >= tagContainer.scrollHeight - 1;
+        Math.ceil(tagContainer.scrollTop + tagContainer.clientHeight) >=
+        tagContainer.scrollHeight - 1;
       const isAtTop = tagContainer.scrollTop <= 1;
 
       // Top Shadow
