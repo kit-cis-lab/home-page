@@ -3,7 +3,14 @@ import Header from "../components/Header.astro";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 
-const { pageTitle } = Astro.props;
+const {
+  pageTitle,
+  description = "京都工芸繊維大学 情報工学 情報知能システム研究室のウェブサイトです。知能システム、特に人工知能の最先端である「計算知能」と「機械学習」を研究しています。",
+  image = "/images/hero-image.jpg",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
+const absoluteImageURL = new URL(image, Astro.site || Astro.url);
 ---
 
 <html lang="ja">
@@ -13,10 +20,13 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle} | 情報知能システム研究室</title>
-    <meta
-      name="description"
-      content="京都工芸繊維大学 情報工学 情報知能システム研究室のウェブサイトです。知能システム、特に人工知能の最先端である「計算知能」と「機械学習」を研究しています。"
-    />
+    <meta name="description" content={description} />
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${pageTitle} | 情報知能システム研究室`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={absoluteImageURL} />
   </head>
   <body class="bg-gray-50 px-4 flex flex-col">
     <Header pageTitle={pageTitle} />
