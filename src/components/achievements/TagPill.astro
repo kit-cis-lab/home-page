@@ -1,6 +1,4 @@
 ---
-import { clsx } from "clsx";
-
 interface Props {
   name: string;
   count: number;
@@ -13,13 +11,13 @@ const { name, count, selected = false } = Astro.props;
 <label class="cursor-pointer group">
   <input type="checkbox" name="tags" value={name} class="peer sr-only" checked={selected} />
   <span
-    class={clsx(
+    class:list={[
       "inline-block py-1 px-3 border rounded-lg cursor-pointer transition-all duration-200",
       "bg-transparent text-gray-900 border-gray-300",
       "group-hover:border-gray-500",
       "peer-checked:bg-sky-700 peer-checked:text-white peer-checked:border-sky-700",
       "peer-focus-visible:ring-2 peer-focus-visible:ring-sky-500 peer-focus-visible:ring-offset-1",
-    )}
+    ]}
   >
     {name} ({count})
   </span>

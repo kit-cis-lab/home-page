@@ -2,8 +2,8 @@
 // Enable SSR for this specific page
 export const prerender = false;
 
-import AchievementFilter from "@/components/AchievementFilter.astro";
-import AchievementList from "@/components/AchievementList.astro";
+import AchievementFilter from "@/components/achievements/AchievementFilter.astro";
+import AchievementList from "@/components/achievements/AchievementList.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
@@ -64,7 +64,11 @@ const createPageUrl = (page: number): string => {
         currentPage > 1 && (
           <a
             href={createPageUrl(1)}
-            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            class:list={[
+              "w-10 h-10 flex items-center justify-center",
+              "border border-gray-400 bg-white text-gray-800",
+              "hover:bg-gray-100 transition-colors rounded",
+            ]}
             title="最初のページへ"
           >
             &lt;&lt;
@@ -76,7 +80,11 @@ const createPageUrl = (page: number): string => {
         currentPage > 1 && (
           <a
             href={createPageUrl(currentPage - 1)}
-            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            class:list={[
+              "w-10 h-10 flex items-center justify-center",
+              "border border-gray-400 bg-white text-gray-800",
+              "hover:bg-gray-100 transition-colors rounded",
+            ]}
             title="前のページへ"
           >
             {currentPage - 1}
@@ -85,7 +93,10 @@ const createPageUrl = (page: number): string => {
       }
 
       <div
-        class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white rounded"
+        class:list={[
+          "w-10 h-10 flex items-center justify-center",
+          "border border-gray-800 bg-gray-800 text-white rounded",
+        ]}
       >
         {currentPage}
       </div>
@@ -94,7 +105,11 @@ const createPageUrl = (page: number): string => {
         currentPage < totalPages && (
           <a
             href={createPageUrl(currentPage + 1)}
-            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            class:list={[
+              "w-10 h-10 flex items-center justify-center",
+              "border border-gray-400 bg-white text-gray-800",
+              "hover:bg-gray-100 transition-colors rounded",
+            ]}
             title="次のページへ"
           >
             {currentPage + 1}
@@ -106,7 +121,11 @@ const createPageUrl = (page: number): string => {
         currentPage < totalPages && (
           <a
             href={createPageUrl(totalPages)}
-            class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
+            class:list={[
+              "w-10 h-10 flex items-center justify-center",
+              "border border-gray-400 bg-white text-gray-800",
+              "hover:bg-gray-100 transition-colors rounded",
+            ]}
             title="最後のページへ"
           >
             &gt;&gt;
