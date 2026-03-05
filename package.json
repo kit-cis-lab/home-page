@@ -32,7 +32,8 @@
   },
   "pnpm": {
     "overrides": {
-      "form-data": "^4.0.5"
+      "form-data": "^4.0.5",
+      "minimatch": "^9.0.5"
     }
   }
 }
