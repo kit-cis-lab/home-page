@@ -6,14 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "node ./dist/server/entry.mjs",
     "astro": "astro",
     "format": "pnpm exec prettier . --write",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.4",
+    "@astrojs/netlify": "^6.6.4",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.18.0",
     "astro-icon": "^1.1.5",
