@@ -6,7 +6,6 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "node ./dist/server/entry.mjs",
     "astro": "astro",
     "format": "pnpm exec prettier . --write",
     "lint": "eslint .",
