@@ -37,6 +37,7 @@ pnpm dev
 | `pnpm dev`             | `localhost:4321` でローカル開発サーバーを起動する    |
 | `pnpm build`           | 本番サイトを `./dist/` にビルドする                  |
 | `pnpm preview`         | デプロイ前にビルドをローカルでプレビューする         |
+| `pnpm start`           | ビルドされた本番用Nodeサーバーを起動する             |
 | `pnpm format`          | Prettier でコードを整形する                          |
 | `pnpm lint`            | ESLint で静的解析を実行する                          |
 | `pnpm lint:fix`        | ESLint で問題を自動修正する                          |
