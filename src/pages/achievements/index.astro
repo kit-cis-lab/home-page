@@ -4,52 +4,42 @@ export const prerender = false;
 
 import AchievementFilter from "@/components/achievements/AchievementFilter.astro";
 import AchievementList from "@/components/achievements/AchievementList.astro";
+import PaginationLink from "@/components/achievements/PaginationLink.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 const PAGE_SIZE = 10;
-const urlParams = Astro.url.searchParams;
-const pageParam = urlParams.get("page");
+const searchParams = Astro.url.searchParams;
+const query = searchParams.getAll("tags");
 
-let currentPage = 1;
-if (pageParam) {
-  const parsed = parseInt(pageParam, 10);
-  if (!Number.isNaN(parsed)) {
-    currentPage = Math.max(1, parsed);
-  }
-}
+const pageParam = parseInt(searchParams.get("page") || "1", 10);
+let currentPage = Math.max(1, Number.isNaN(pageParam) ? 1 : pageParam);
 
 const allAchievements = await getCollection("achievements");
-const tagCountMap = allAchievements
-  .flatMap((a) => a.data.tags)
-  .reduce((map, tag) => {
-    map.set(tag, (map.get(tag) || 0) + 1);
-    return map;
-  }, new Map<string, number>());
+
+const tagCountMap = allAchievements.reduce((acc, achievement) => {
+  achievement.data.tags.forEach((tag) => acc.set(tag, (acc.get(tag) || 0) + 1));
+  return acc;
+}, new Map<string, number>());
+
 const allTags = Array.from(tagCountMap.entries())
-  .map(([name, count]) => ({ name, count }))
+  .map((entry) => ({ name: entry[0], count: entry[1] }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
-const query: string[] = Astro.url.searchParams.getAll("tags");
-const filteredAchievements =
-  query.length > 0
-    ? allAchievements.filter((item) => query.every((tag) => item.data.tags.includes(tag)))
-    : allAchievements;
-const sortedAchievements = filteredAchievements.sort((a, b) => {
-  return b.data.date.getTime() - a.data.date.getTime();
-});
+const sortedAchievements = allAchievements
+  .filter((achievement) => query.every((tag) => achievement.data.tags.includes(tag)))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const totalItems = sortedAchievements.length;
-const totalPages = Math.ceil(totalItems / PAGE_SIZE);
-currentPage = Math.min(Math.max(1, currentPage), totalPages);
+const totalPages = Math.max(1, Math.ceil(sortedAchievements.length / PAGE_SIZE));
+currentPage = Math.min(currentPage, totalPages);
 
-const startIndex = (currentPage - 1) * PAGE_SIZE;
-const endIndex = startIndex + PAGE_SIZE;
-const currentViewData = sortedAchievements.slice(startIndex, endIndex);
+const paginatedAchievements = sortedAchievements.slice(
+  (currentPage - 1) * PAGE_SIZE,
+  currentPage * PAGE_SIZE,
+);
 
-const createPageUrl = (page: number): string => {
-  const params = new URLSearchParams();
-  query.forEach((tag) => params.append("tags", tag));
+const createPageUrl = (page: number) => {
+  const params = new URLSearchParams(searchParams);
   params.set("page", page.toString());
   return `?${params.toString()}`;
 };
@@ -58,78 +48,35 @@ const createPageUrl = (page: number): string => {
 <BaseLayout pageTitle="研究実績">
   <div class="max-w-5xl w-full mx-auto px-4 py-4 gap-3 flex flex-col">
     <AchievementFilter allTags={allTags} query={query} />
-    <AchievementList achievements={currentViewData} />
+    <AchievementList achievements={paginatedAchievements} />
     <nav class="flex justify-center items-center space-x-2 mt-5">
       {
         currentPage > 1 && (
-          <a
-            href={createPageUrl(1)}
-            class:list={[
-              "w-10 h-10 flex items-center justify-center",
-              "border border-gray-400 bg-white text-gray-800",
-              "hover:bg-gray-100 transition-colors rounded",
-            ]}
-            title="最初のページへ"
-          >
-            &lt;&lt;
-          </a>
+          <>
+            <PaginationLink href={createPageUrl(1)} title="最初のページへ">
+              &lt;&lt;
+            </PaginationLink>
+            <PaginationLink href={createPageUrl(currentPage - 1)} title="前のページへ">
+              {currentPage - 1}
+            </PaginationLink>
+          </>
         )
       }
 
-      {
-        currentPage > 1 && (
-          <a
-            href={createPageUrl(currentPage - 1)}
-            class:list={[
-              "w-10 h-10 flex items-center justify-center",
-              "border border-gray-400 bg-white text-gray-800",
-              "hover:bg-gray-100 transition-colors rounded",
-            ]}
-            title="前のページへ"
-          >
-            {currentPage - 1}
-          </a>
-        )
-      }
-
-      <div
-        class:list={[
-          "w-10 h-10 flex items-center justify-center",
-          "border border-gray-800 bg-gray-800 text-white rounded",
-        ]}
-      >
+      <PaginationLink href="#" title="現在のページ" isDisabled={true}>
         {currentPage}
-      </div>
+      </PaginationLink>
 
       {
         currentPage < totalPages && (
-          <a
-            href={createPageUrl(currentPage + 1)}
-            class:list={[
-              "w-10 h-10 flex items-center justify-center",
-              "border border-gray-400 bg-white text-gray-800",
-              "hover:bg-gray-100 transition-colors rounded",
-            ]}
-            title="次のページへ"
-          >
-            {currentPage + 1}
-          </a>
-        )
-      }
-
-      {
-        currentPage < totalPages && (
-          <a
-            href={createPageUrl(totalPages)}
-            class:list={[
-              "w-10 h-10 flex items-center justify-center",
-              "border border-gray-400 bg-white text-gray-800",
-              "hover:bg-gray-100 transition-colors rounded",
-            ]}
-            title="最後のページへ"
-          >
-            &gt;&gt;
-          </a>
+          <>
+            <PaginationLink href={createPageUrl(currentPage + 1)} title="次のページへ">
+              {currentPage + 1}
+            </PaginationLink>
+            <PaginationLink href={createPageUrl(totalPages)} title="最後のページへ">
+              &gt;&gt;
+            </PaginationLink>
+          </>
         )
       }
     </nav>
