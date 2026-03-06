@@ -27,6 +27,7 @@ const { href, title, isDisabled = false } = Astro.props;
         "hover:bg-gray-100 transition-colors rounded",
       ]}
       title={title}
+      aria-label={title}
     >
       <slot />
     </a>
