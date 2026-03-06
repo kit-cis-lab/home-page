@@ -15,6 +15,9 @@ const { href, title, isDisabled = false } = Astro.props;
         "w-10 h-10 flex items-center justify-center",
         "border border-gray-800 bg-gray-800 text-white rounded",
       ]}
+      title={title}
+      aria-label={title}
+      aria-current="page"
     >
       <slot />
     </div>
