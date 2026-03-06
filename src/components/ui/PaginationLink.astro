@@ -1,0 +1,38 @@
+---
+interface Props {
+  href?: string | undefined;
+  title: string;
+  isDisabled?: boolean;
+}
+
+const { href, title, isDisabled = false } = Astro.props;
+---
+
+{
+  isDisabled ? (
+    <div
+      class:list={[
+        "w-10 h-10 flex items-center justify-center",
+        "border border-gray-800 bg-gray-800 text-white rounded",
+      ]}
+      title={title}
+      aria-label={title}
+      aria-current="page"
+    >
+      <slot />
+    </div>
+  ) : (
+    <a
+      href={href}
+      class:list={[
+        "w-10 h-10 flex items-center justify-center",
+        "border border-gray-400 bg-white text-gray-800",
+        "hover:bg-gray-100 transition-colors rounded",
+      ]}
+      title={title}
+      aria-label={title}
+    >
+      <slot />
+    </a>
+  )
+}

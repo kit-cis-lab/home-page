@@ -8,61 +8,45 @@ interface Props {
   };
 }
 
+import PaginationLink from "@/components/ui/PaginationLink.astro";
+
 const { page } = Astro.props;
 ---
 
 <nav class="flex justify-center items-center space-x-2 mt-5">
   {
     page.url.first && page.currentPage > 1 && (
-      <a
-        href={page.url.first}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
-        title="最初のページへ"
-      >
+      <PaginationLink href={page.url.first} title="最初のページへ">
         &lt;&lt;
-      </a>
+      </PaginationLink>
     )
   }
 
   {
     page.url.prev && (
-      <a
-        href={page.url.prev}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
-        title="前のページへ"
-      >
+      <PaginationLink href={page.url.prev} title="前のページへ">
         {page.currentPage - 1}
-      </a>
+      </PaginationLink>
     )
   }
 
-  <div
-    class="w-10 h-10 flex items-center justify-center border border-gray-800 bg-gray-800 text-white rounded"
-  >
+  <PaginationLink title="現在のページ" isDisabled={true}>
     {page.currentPage}
-  </div>
+  </PaginationLink>
 
   {
     page.url.next && (
-      <a
-        href={page.url.next}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
-        title="次のページへ"
-      >
+      <PaginationLink href={page.url.next} title="次のページへ">
         {page.currentPage + 1}
-      </a>
+      </PaginationLink>
     )
   }
 
   {
     page.url.last && page.currentPage < page.lastPage && (
-      <a
-        href={page.url.last}
-        class="w-10 h-10 flex items-center justify-center border border-gray-400 bg-white text-gray-800 hover:bg-gray-100 transition-colors rounded"
-        title="最後のページへ"
-      >
+      <PaginationLink href={page.url.last} title="最後のページへ">
         &gt;&gt;
-      </a>
+      </PaginationLink>
     )
   }
 </nav>
