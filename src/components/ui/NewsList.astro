@@ -22,7 +22,7 @@ const { news } = Astro.props;
       return (
         <li class="border-b py-2 flex flex-col sm:flex-row sm:items-center">
           <p class="mb-2 sm:mb-0 sm:w-30 sm:shrink-0 text-lg tabular-nums">{localeDate}</p>
-          <div class="sm:flex-1 prose-a:text-blue-700 prose-a:underline prose-a:hover:text-blue-500">
+          <div class="sm:flex-1 prose-a:link-primary">
             <Content />
           </div>
         </li>
