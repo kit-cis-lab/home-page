@@ -7,6 +7,6 @@
 @layer utilities {
   .link-primary,
   .prose a {
-    @apply text-blue-700 underline hover:text-blue-500 hover:underline focus:underline;
+    @apply text-blue-700 underline hover:text-blue-500;
   }
 }
